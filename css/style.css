@@ -11,7 +11,7 @@ body {
   align-content: center;
   margin: 0 auto;
   background-image: url(https://firebasestorage.googleapis.com/v0/b/my-student-quarters.appspot.com/o/MSQ%20Website%2FLanding%20page%20Photo.png?alt=media&token=b86a316b-6531-4ca8-a472-0b38c2ce8597);
-    background-size: cover;
+    background-size: cover fixed;
 }
 
 header {
