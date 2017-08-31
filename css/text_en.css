@@ -1,6 +1,8 @@
+/* .css file with all the text written in the landing page (index.html). Language=English*/
+
+/* Text for section "What is My Student Quarters" */
 .txt-what:after {
-  content:'What is My Student Quarters?';
-  
+  content:'What is My Student Quarters?';  
 } 
 .txt-what2:after {
   content:'My Student Quarters is your one-stop shop (well, website) for everything related to off-campus student housing. Our site follows you from finding your next apartment to picking up your security deposit after your lease ends.';
@@ -18,13 +20,13 @@
   content:'There are a lot of exciting, stressful challenges associated with being a student, but finding and maintaining your housing no longer has to be one of them.';
 }  
 .txt-what7:after { 
-  /*font-family: 'Lato:700', bold;*/
   content:'We are My Student Quarters - housing made for students, by students.';
 }
+
+/* Text for section "What is the MSQ vision" */
 .txt-vision:after {
   content:'What is the MSQ Vision?'
-}
-  
+}  
 .txt-vision2:after {
   content:'As a new company, we plan to start strong with the basics and expand with time. Right now, we are focusing on the heart of our product: to make finding housing as a student easy and efficient from the comfort of your computer. As we all know, there is much more that goes into student housing than just finding your apartment and paying for it.'
 }  
@@ -34,11 +36,9 @@
 .txt-vision202:after {
   content:'Get ready to make everything related to your student housing easy and fun!'
 }
-
 .txt-vision3:after {
   content:'What Makes Us So Unique?'
 }
-
 .txt-vision4:after {
   content:'We are student housing that is made for students, by students. We know what it is like to be a student and we live in the same environment as our customers. We are the customer.'
 }
@@ -48,15 +48,12 @@
 .txt-vision402:after {
  content:'We put the power in our people!'
 }
-
 .txt-vision5:after {
   content:'What is it That Provides Value to Our Service?' 
 }
-
 .txt-vision6:after {
   content:'Two words - Convenience and Security!'
 }
-
 .txt-vision7:after {
   content:'We make finding a house quick, easy, and safe. As the search-engine for student housing, we do all the dirty work to find and post units near your university, you only have to rent off the site with a few simple clicks!'
 }
@@ -67,6 +64,7 @@
   content:'Students and landlords can also be reviewed by one another after a lease ends so future partnerships can make more educated decisions before signing a lease agreement.'
 } 
 
+/* Text for section "Our values" */
 .txt-values:after {
   content:'Our Values:'
 }
@@ -74,7 +72,7 @@
   content:'Quality'
 }
 .txt-values201:after {
-  content:'to provide an outstanding product with incomparable service'
+  content:'To provide an outstanding product with incomparable service'
 } 
 .txt-values3:after {
   content:'Integrity'
@@ -86,13 +84,13 @@
   content:'Customer Commitment'
 }
 .txt-values401:after {
-  content:'we strive to make a positive difference in our customers\' housing accommodations. Our customers are more than just the renter, they are the foundation of our company.'
+  content:'We strive to make a positive difference in our customers\' housing accommodations. Our customers are more than just the renter, they are the foundation of our company.'
 } 
 .txt-values5:after {
   content:'Respect'
 }
 .txt-values501:after {
-  content:'everyone, no matter how big or small, old or young, brown or purple, is welcomed with open arms to our community. R-E-S-P-E-C-T'
+  content:'Everyone, no matter how big or small, old or young, brown or purple, is welcomed with open arms to our community. R-E-S-P-E-C-T'
 } 
 .txt-values6:after {
   content:'Convenience'
@@ -109,14 +107,26 @@
 .txt-values702:after {
   content:'All created with your voice in mind.'
 } 
-/*Our Service Applications:
-- Landlord Application
-Blurb: If you are interested in renting out your apartment, spare room, or vacation home please complete a "Landlord" application so we know who you are. For more details, click here.
-Link to Landlord Application
-- Rent Your Place Application 
-Blurb: If you are renting out your location, please complete a "Rent Your Place" application so we know the details of your unit. For more details, click here.
-Link to Rent Your Place Application
-- MSQ Ambassador Application
-Blurb: If you are interesting in working with the MSQ team in one way or another, please complete a "MSQ Ambassador" application. For more details, click here.
-Link to MSQ Ambassador Application
-*/
+/* Tex for section "Our Service Applications" */ 
+
+.txt-applications:after {
+  content:'Our Service Applications:'
+}
+.txt-applications2:after {
+  content:'Landlord Application'
+}
+.txt-applications201:after {
+  content:'If you are interested in renting out your apartment, spare room, or vacation home please complete a "Landlord" application so we know who you are. For more details, click here.'
+}
+.txt-applications3:after {
+  content:'Rent Your Place Application'
+} 
+.txt-applications301:after {
+  content:'If you are renting out your location, please complete a "Rent Your Place" application so we know the details of your unit. For more details, click here.'
+}
+.txt-applications4:after {
+  content:'MSQ Ambassador Application'
+}
+.txt-applications401:after {
+  content:'If you are interesting in working with the MSQ team in one way or another, please complete a "MSQ Ambassador" application. For more details, click here.'
+}

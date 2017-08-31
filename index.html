@@ -1,89 +1,136 @@
 <!DOCTYPE html>
 
 <html >
-<head>
-  <meta charset="UTF-8">
-  <link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet" href="css/text_en.css" />
-  <title>My Student Quarters BETA</title>
-  <link href="https://fonts.googleapis.com/css?family=Just+Me+Again+Down+Here|Lato:300|Lato:700" rel="stylesheet">
-</head>
+  <!-- settings and imports needed to make the website work. links to the 2 .css files used, links to the fonts used, and the name that will be displayed in the tab -->
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/text_en.css" />
+    <!-- import fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Just+Me+Again+Down+Here|Lato:300|Lato:700" rel="stylesheet">
+    <!-- import social media icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css" rel="stylesheet">
+    <title>My Student Quarters BETA</title>
+  </head>
 
 
-<body>
-  <header>
-    <div >  <img class="logo" src="https://firebasestorage.googleapis.com/v0/b/my-student-quarters.appspot.com/o/MSQ%20Logos%2FLogo_v1_Citrus.png?alt=media&token=979de018-6fba-4acf-b98c-4aaaef2d8e5e" alt="logo" />
-</div>
-    <div>My Student Quarters</div>
-    <!--div>Menu</div-->
-    <div class="right">Sign Up</div>
-    <div class="">Log In</div>
-  </header>
-  <div class="title">
-    <h1>My Student Quarters</h1>
-  </div>
-  <section class="MSQ-what">
-    <div> <h2 class=txt-what /> </div>
-    <p class=txt-what2 />
-    <p class=txt-what3 />
-    <p class=txt-what4 />
-    <p class=txt-what5 />
-    <p class=txt-what6 />
-    <div><strong class=txt-what7></strong></div>
-    <div class="buttons">
-      <div class="button-landlord">
-         <p> <a href=#landlord> Register as a Lanlord </a></p>
-      </div>
-      <div class="button-rent">
-        <p> Rent your place </p>
-      </div>
-      <div class="button-ambassador">
-        <p> Become an Ambassador </p>
-      </div>
+  <body>
+    <!-- Settings for the HEADER section. source of the logo and words displayed -->
+    <header>
+      <div >  <img class="logo" src="https://firebasestorage.googleapis.com/v0/b/my-student-quarters.appspot.com/o/MSQ%20Logos%2FLogo_v1_Citrus.png?alt=media&token=979de018-6fba-4acf-b98c-4aaaef2d8e5e" alt="logo" /></div>
+      <div>My Student Quarters</div>
+      <!-- <div>Menu</div>
+      <div class="right">Sign Up</div>
+      <div class="">Log In</div> -->
+    </header>
+    
+    <!-- Settings for the title -->
+    <div class="title">
+      <h1>My Student Quarters</h1>
     </div>
-  </section>
-<section>
-</section>
-  <section id=landlord class="MSQ-vision">
-    <div> <h2 class=txt-vision /> </div>
-    <p class=txt-vision2 />
-    <p class=txt-vision201 />
-    <p class=txt-vision202 />
-    <p class=txt-vision203 />
-    <div> <h2 class=txt-vision3 /> </div>
-    <p class=txt-vision4 />
-    <p class=txt-vision401 />
-    <p class=txt-vision402 />
-    <div> <h2 class=txt-vision5 /> </div>
-    <p class=txt-vision6 />
-    <p class=txt-vision7 />
-    <p class=txt-vision701 />
-    <p class=txt-vision702 />
-  </section>
-  <section>
-  </section>
-<section>
-    <section class="MSQ-values">
-        <div> <h2 class=txt-values /> </div>
-        <div> <h3 class=txt-values2 /> </div>
-        <p class=txt-values201 />
-        <div> <h3 class=txt-values3 /> </div>
-        <p class=txt-values301 />
-        <div> <h3 class=txt-values4 /> </div>
-        <p class=txt-values401 />
-        <div> <h3 class=txt-values5 /> </div>
-        <p class=txt-values501 />
-        <div> <h3 class=txt-values6 /> </div>
-        <p class=txt-values601 />
-        <div> <h3 class=txt-values7 /> </div>
-        <p class=txt-values701 />
-        <div><strong class=txt-values702></strong></div>
-</section>
-  <footer>
-    <div >  <img class="logo-footer" src="https://firebasestorage.googleapis.com/v0/b/my-student-quarters.appspot.com/o/MSQ%20Logos%2FLogo_v1_White.png?alt=media&token=055b423c-3894-4541-8c79-d09bb70411eb" alt="logo-footer" /></div>
-    <div>©2017 My Student Quarters Inc. All rights reserved.
-    </div>
-    <div class=right>Terms...</div>
-  </footer>
-</body>
+    
+    <!-- Settings for the section "What is MSQ". Text is taken from (text_en.css) -->
+    <section class="MSQ-what main-section">
+      <div> <h2 class=txt-what /> </div>
+      <p class=txt-what2 />
+      <p class=txt-what3 />
+      <p class=txt-what4 />
+      <p class=txt-what5 />
+      <p class=txt-what6 />
+      <div><strong class=txt-what7></strong></div>
+      <div class="button-bar">
+        <div class="button landlord">
+          <p> <a href=#applications> Register as a Lanlord </a></p>
+        </div>
+        <div class="button rent">
+          <p> <a href=#applications> Rent your place </a></p>
+        </div>
+        <div class="button ambassador">
+          <p> <a href=#applications> Become an Ambassador </a></p>
+        </div>
+      </div>
+    </section>
+  
+    <!-- Empty section to give space between. -->
+    <!--section /-->
+
+    <!-- Settings for the section "MSQ Vision". Text is taken from (text_en.css) -->
+    <section class="MSQ-vision  main-section">
+      <div> <h2 class=txt-vision /> </div>
+      <p class=txt-vision2 />
+      <p class=txt-vision201 />
+      <p class=txt-vision202 />
+      <p class=txt-vision203 />
+      <div> <h2 class=txt-vision3 /> </div>
+      <p class=txt-vision4 />
+      <p class=txt-vision401 />
+      <p class=txt-vision402 />
+      <div> <h2 class=txt-vision5 /> </div>
+      <p class=txt-vision6 />
+      <p class=txt-vision7 />
+      <p class=txt-vision701 />
+      <p class=txt-vision702 />
+    </section>
+
+    <!-- Settings for the section "MSQ Vision". Text is taken from (text_en.css) -->
+    <section class="MSQ-values main-section">
+      <div> <h2 class=txt-values /> </div>
+      <div> <h3 class=txt-values2 /> </div>
+      <p class=txt-values201 />
+      <div> <h3 class=txt-values3 /> </div>
+      <p class=txt-values301 />
+      <div> <h3 class=txt-values4 /> </div>
+      <p class=txt-values401 />
+      <div> <h3 class=txt-values5 /> </div>
+      <p class=txt-values501 />
+      <div> <h3 class=txt-values6 /> </div>
+      <p class=txt-values601 />
+      <div> <h3 class=txt-values7 /> </div>
+      <p class=txt-values701 />
+      <div><strong class=txt-values702></strong></div>
+    </section>
+
+    <!-- Settings for the section "MSQ Applications". Text is taken from (text_en.css) -->
+    <section id=applications class="MSQ-applications main-section">
+      <div> <h2 class=txt-applications /> </div>
+      <div> <h3 class=txt-applications2 /> </div>
+      <p class=txt-applications201 />
+          <div class="button apply-landlord">
+            <p> Lanlord Formulary </p>
+            <div onclick="javascript:window.open('https://forms.zohopublic.eu/mystudentquarterscom/form/LandlordHouseApplication/formperma/5h9h1d9m395H2_akD3bf14jDH');" /> </div>
+          </div>
+      <div> <h3 class=txt-applications3 /> </div>
+      <p class=txt-applications301 />
+          <div class="button apply-rent">
+            <p> Rent Your Place Formulary</p>
+            <div onclick="javascript:window.open('https://forms.zohopublic.eu/mystudentquarterscom/form/RentYourPlace/formperma/dJ90AbH5j2aGC26B5eDMK5g3a');"/> </div>
+        </div>
+      <div> <h3 class=txt-applications4 /> </div>
+      <p class=txt-applications401 />
+          <div onclick="javascript:window.open('https://forms.zohopublic.eu/mystudentquarterscom/form/MSQAmbassadorProgram/formperma/9G012410bKm46a23900f40Fk0');" class="button apply-ambassador">
+            <p> Ambassador Formulary </p>
+        </div>
+    </section>
+     
+    <!-- Settings for Footer. Source of the logo and words displayed -->
+    <footer>
+      <div >  <img class="logo-footer" src="https://firebasestorage.googleapis.com/v0/b/my-student-quarters.appspot.com/o/MSQ%20Logos%2FLogo_v1_White.png?alt=media&token=055b423c-3894-4541-8c79-d09bb70411eb" alt="logo-footer" /></div>
+      <div>©2017 My Student Quarters Inc. All rights reserved.
+      </div>
+      <div class="footer-social-icons">
+          <ul class="social-icons">
+            <!-- Tutorial used: https://www.thesitewizard.com/html-tutorial/open-links-in-new-window-or-tab.shtml -->
+              <li><a href="https://www.facebook.com/studentquarters" rel="noopener noreferrer" target="_blank" class="social-icon"> <i class="fa fa-facebook"></i></a></li>
+              <li><a href="https://twitter.com/studentquarters" rel="noopener noreferrer" target="_blank" class="social-icon"> <i class="fa fa-twitter"></i></a></li>
+              <li><a href="https://www.instagram.com/studentquarters/" rel="noopener noreferrer" target="_blank" class="social-icon"> <i class="fa fa-instagram"></i></a></li>
+              <!-- <li><a href="" class="social-icon"> <i class="fa fa-youtube"></i></a></li>
+              <li><a href="" class="social-icon"> <i class="fa fa-linkedin"></i></a></li>
+              <li><a href="" class="social-icon"> <i class="fa fa-google-plus"></i></a></li> -->
+          </ul>
+      </div>
+      <div class=right>Terms...</div>
+    </footer>
+
+    
+  </body>
 </html>
