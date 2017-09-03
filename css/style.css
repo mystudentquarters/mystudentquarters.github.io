@@ -2,11 +2,12 @@
 
 /* settings to define the default font and parameters */
 html {
-  font-size: 15px;
+  /* font-size: 15px; */
   color: white;
   /*font-family: 'Cinzel', serif;*/
-  font-family: 'Lato', sans-serif;
+  font-family: 'Lato', sans-serif; 
 }
+
 
 /* settings to define the structure of the site and the photo for the background. In this ocassion, GRID is used with 7 rows */
 body {
@@ -15,10 +16,11 @@ body {
   align-content: center;
   margin: 0 auto;
   background-image: url(https://firebasestorage.googleapis.com/v0/b/my-student-quarters.appspot.com/o/MSQ%20Website%2FLanding%20page%20Photo.png?alt=media&token=b86a316b-6531-4ca8-a472-0b38c2ce8597);
+  min-height: 100%;
   background-repeat: no-repeat;
-  background-position: left top;
+  background-position: center;
   background-attachment: fixed;
-  background-size: 1450px;
+  background-size: cover;
 }
 
 /* setting to define the Header. FLEX is used to structure the section and the font is also different here */
