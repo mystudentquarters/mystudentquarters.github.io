@@ -8,7 +8,7 @@ html {
   font-family: 'Lato', sans-serif;
 }
 
-/* settings to define the structure of the site and the photo for the background. In this ocassion, GRID is used with 8 rows */
+/* settings to define the structure of the site and the photo for the background. In this ocassion, GRID is used with 7 rows */
 body {
   display: grid;
   grid-template-rows: 2rem 14rem auto auto auto auto 2rem;
@@ -32,7 +32,7 @@ header {
   font-size: 20px;
   /* bottom border line */
   border-bottom: 1px white solid;
-  margin: 0 3rem;
+  margin: 1rem 3rem;
 }
 /* margins and alignment for the header */
   header div {
@@ -78,6 +78,7 @@ footer .right {
   text-align: center;
   font-family: 'Just Me Again Down Here', cursive;
   font-size: 40px;
+  margin: 3rem;
 }
 
 .main-section {
@@ -93,6 +94,7 @@ footer .right {
   min-height: 25rem;
   padding: 1rem 50px;
   align-items: center;
+  margin: 1rem auto;
   border-radius: 25px; /* borders round */
 }
 /* settings to define the "What is My Student Quarters vision" section */
@@ -160,7 +162,7 @@ footer .right {
   color: inherit;
 }
 
-  .button.ambassador {
+  /* .button.ambassador {
 
   }
 
@@ -168,33 +170,17 @@ footer .right {
   }
 
   .button-rent {
-  }
+  } */
 
   .button-apply-ambassador {
     align-items: center;
   }
 
   .button-apply-landlord {
-    background:    #f7c331;
-    border-radius: 5px;
-    padding:       5px 5px;
-    color:         #ffffff;
-    display:       inline-block;
-    font:          normal 700 18px/1 "Lato", sans-serif;
-    text-align:    center;
-    text-shadow:   none;
     align-items: center;
   }
 
   .button-apply-rent {
-    background:    #f7c331;
-    border-radius: 5px;
-    padding:       5px 5px;
-    color:         #ffffff;
-    display:       inline-block;
-    font:          normal 700 18px/1 "Lato", sans-serif;
-    text-align:    center;
-    text-shadow:   none;
     align-items: center;
   }
   
@@ -231,7 +217,6 @@ footer .right {
   .social-icons li {
       vertical-align: top;
       display: inline;
-      height: 100px;
   }
   .social-icons a {
       color: #fff;
