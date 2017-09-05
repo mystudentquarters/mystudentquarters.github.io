@@ -2,22 +2,21 @@
 
 /* settings to define the default font and parameters */
 html {
-  /* font-size: 15px; */
+  font-size: 15px;
   color: white;
   /*font-family: 'Cinzel', serif;*/
   font-family: 'Lato', sans-serif; 
 }
 
-
 /* settings to define the structure of the site and the photo for the background. In this ocassion, GRID is used with 7 rows */
 body {
-  display: grid;
-  grid-template-rows: 2rem 14rem auto auto auto auto 2rem;
+  /* display: grid; */
+  grid-template-rows: 2.5rem auto auto auto auto auto 2.5rem;
   align-content: center;
   margin: 0 auto;
   background-image: url(https://firebasestorage.googleapis.com/v0/b/my-student-quarters.appspot.com/o/MSQ%20Website%2FLanding%20page%20Photo.png?alt=media&token=b86a316b-6531-4ca8-a472-0b38c2ce8597);
   min-height: 100%;
-  background-repeat: no-repeat;
+  /* background-repeat: no-repeat; */
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
@@ -28,7 +27,7 @@ header {
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
-  /* justify-content: space-around;  */
+  /* justify-content: space-around;
   /* font */
   font-family: 'Just Me Again Down Here', cursive;
   font-size: 20px;
@@ -56,8 +55,8 @@ footer {
   align-items: center;
   
   /* margins and alignment for the footer */
-  margin: 3rem;
-  padding: .5rem 100px;
+  margin: 1rem 3rem;
+  /* padding: .5rem 100px; */
   
   /* font */
   font-family: 'Just Me Again Down Here', cursive;
@@ -65,6 +64,9 @@ footer {
   
   /* Top border line */
   border-top: 1px white solid;
+}
+footer div {
+  margin-left: 20px;
 }
 footer .right {
   margin-left: auto;
@@ -80,60 +82,37 @@ footer .right {
   text-align: center;
   font-family: 'Just Me Again Down Here', cursive;
   font-size: 40px;
-  margin: 3rem;
+  margin: -2rem;
 }
 
 .main-section {
-  margin: 2.5rem auto;
-}
-
-/* settings to define the "What is My Student Quarters" section */
-.MSQ-what {
   display: flex;
   flex-flow: column nowrap;
   background: rgba(0, 0, 0, .5); /* translucid background*/
-  width: 800px;
-  min-height: 25rem;
+  max-width: 800px;
+  margin: 2.5rem auto;
   padding: 1rem 50px;
   align-items: center;
   margin: 1rem auto;
   border-radius: 25px; /* borders round */
 }
+
+/* settings to define the "What is My Student Quarters" section */
+.MSQ-what {
+  /* min-height: 25rem; */
+}
 /* settings to define the "What is My Student Quarters vision" section */
 .MSQ-vision {
-  display: flex;
-  flex-flow: column nowrap;
-  background: rgba(0, 0, 0, .5);
-  width: 800px;
-  min-height: 25rem;
-  padding: 1rem 50px;
-  align-items: center;
-  /* borders */
-  border-radius: 25px;
+  /* min-height: 25rem; */
 }
 /* settings to define the "Our Values" section */
 .MSQ-values {
-  display: flex;
-  flex-flow: column nowrap;
-  background: rgba(0, 0, 0, .5);
-  width: 800px;
-  min-height: 25rem;
-  padding: 1rem 50px;
-  align-items: center;
-  /* borders */
-  border-radius: 25px;
+  /* min-height: 25rem; */
 }
 /* settings to define the "Applications" section */
 .MSQ-applications {
-  display: flex;
-  flex-flow: column nowrap;
-  background: rgba(0, 0, 0, .5);
-  width: 800px;
-  min-height: 25rem;
-  padding: 1rem 50px;
-  align-items: center;
-  /* borders */
-  border-radius: 25px;
+  /* min-height: 25rem; */
+  
 }
 
 /* settings to define the buttons.  */
@@ -154,6 +133,7 @@ footer .right {
   text-align:    center;
   text-shadow:   none;
   cursor: pointer;
+  margin-bottom: 2rem;
 }
 
 .button a {
@@ -186,20 +166,21 @@ footer .right {
     align-items: center;
   }
   
-  h1,
-  h2,
+  /* h2, */
   h3,
   h4,
   h5,
   h6 {
       margin:  1% 0 1% 0;
   }
-  ._12 {
+
+  /* ._12 {
       font-size: 1.2em;
   }
   ._14 {
       font-size: 1.4em;
   }
+  */
   ul {
       padding:0;
       list-style: none;
