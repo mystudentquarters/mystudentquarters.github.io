@@ -5,9 +5,9 @@
   content:'What is My Student Quarters?';  
 } 
 .txt-what2:after {
-  content:'My Student Quarters is your one-stop shop (well, website) for everything related to off-campus student housing. Our site follows you from finding your next apartment to picking up your security deposit after your lease ends.';
+  content:'My Student Quarters is your one-stop shop (well, website) for everything related to off-campus student housing. Our site guides you from finding your next apartment to picking up your security deposit after your lease ends.';
 }
-.txt-what3:after {  
+.txt-what3:after {
   content:'We work with landlords and realtors to post local units with professional pictures, lease information, and even a map that shows you the unit\'s distance to your university.';
 }
 .txt-what4:after {
@@ -28,7 +28,7 @@
   content:'What is the MSQ Vision?'
 }  
 .txt-vision2:after {
-  content:'As a new company, we plan to start strong with the basics and expand with time. Right now, we are focusing on the heart of our product: to make finding housing as a student easy and efficient from the comfort of your computer. As we all know, there is much more that goes into student housing than just finding your apartment and paying for it.'
+  content:'As a new company, we plan to start strong with the basics and expand with time. Right now, we are focusing on the heart of our product: to make finding housing as a student easy and efficient from the comfort of your computer. As we all know, there is much more that goes into student housing than just finding your apartment and paying for it.' <br> 'MSQ wants to be involved in those details too. We have a number of (self-proclaimed) smart, creative ideas that will be added to the site as our platform continues to grow.'
 }  
 .txt-vision201:after {
   content:'MSQ wants to be involved in those details too. We have a number of (self-proclaimed) smart, creative ideas that will be added to the site as our platform continues to grow.'
