@@ -1,5 +1,37 @@
 /* Section for the tabs of Terms & Conditions page*/
 
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,200italic,300,300italic,400italic,600,600italic,700,700italic,900,900italic);
+
+html {
+  
+  font-family: 'Source Sans Pro', sans-serif;
+  line-height: 1.5;
+  color: #323232;
+  font-size: 16px;
+  font-weight: 400;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+}
+
+
+
+
+/* settings to define the structure of the body. GRID is selected to arrange the sections in rows */
+body {
+  display: grid;
+  grid-template-rows: auto;
+  align-content: center;
+  margin: 0 auto;
+  min-height: 100%;
+  background-image: url(https://firebasestorage.googleapis.com/v0/b/my-student-quarters.appspot.com/o/MSQ%20Website%2FLanding%20page%20Photo.png?alt=media&token=b86a316b-6531-4ca8-a472-0b38c2ce8597);
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+
+
 *, *:before, *:after {
   margin: 0;
   padding: 0;

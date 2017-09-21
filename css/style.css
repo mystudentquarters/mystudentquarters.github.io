@@ -18,7 +18,7 @@ html {
 /* settings to define the structure of the body. GRID is selected to arrange the sections in rows */
 body {
   display: grid;
-  grid-template-rows: auto auto auto auto auto auto auto auto auto;
+  grid-template-rows: 5rem 10rem auto auto 35rem auto auto auto auto auto;
   align-content: center;
   margin: 0 auto;
   min-height: 100%;
@@ -30,6 +30,7 @@ body {
 
 
 /* setting to define the Header. FLEX is used to structure the section and the font is also different here */
+/* GRID 1 (5rem)*/
 header {
   display: flex;
   flex-flow: row nowrap;
@@ -56,7 +57,8 @@ header {
     height: 50px;
   }
 
-/* setting to define the Footer. FLEX is used to structure the section and the font is also different here */  
+/* setting to define the Footer. FLEX is used to structure the section and the font is also different here */
+/* GRID 10 (5rem)*/  
 footer {
   display: flex;
   flex-flow: row nowrap;
@@ -84,6 +86,7 @@ footer .right {
 }
 
 /* settings to define the "My Student Quarters" main title */
+/* GRID 2 (10rem)*/
 .title {
   text-align: center;
   font-family: 'Just Me Again Down Here', cursive;
@@ -93,19 +96,20 @@ footer .right {
 }
 
 /* settings to define the "Welcome slogan and buttons" section */
+/* GRID 3 (auto)*/
 .main-section1 {
   display: flex;
   flex-flow: column nowrap;
   background: rgba(0, 0, 0, .5); /* translucid background*/
   max-width: 800px;
-  margin: 2.5rem auto 12rem auto;
+  min-width:800px;
+  margin: 2.5rem auto 10rem auto;
   padding: 1rem 50px;
   align-items: center;
   text-align: center;
   border-radius: 25px; /* borders round */
   color: white;
 }
-
 
 .MSQ-welome {
 }
@@ -130,7 +134,43 @@ footer .right {
   margin-bottom: 2rem;
 }
 
+/* settings to define the "bounce down arrow" */
+/* GRID 4 (auto)*/
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+
+.BounceArrow { 
+  width: 100%; 
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.middle, .go-here {
+  position: top;
+  height: 10em;
+}
+.fa-circle { color: transparent; }
+.arrow-down { 
+  color: white; 
+}
+  .fa-stack {
+      animation: bounce 2s infinite;
+    }
+    
+   .fa-stack &:hover {
+      animation: none; 
+    }
+
 /* settings to define the "What is My Student Quarters" section */
+/* GRID 5 (27rem)*/
 .MSQ-what {
   display: flex;
   flex-flow: column nowrap;
@@ -143,6 +183,7 @@ footer .right {
         .mySlides {
           display: grid;
           background-color: white;
+          
 
         }
 
@@ -152,6 +193,7 @@ footer .right {
           position: relative;
           margin: auto;
           max-height: 25rem;
+
         }
 
         /* Next & previous buttons */
@@ -227,22 +269,29 @@ footer .right {
           .prev, .next,.text {font-size: 11px}
         }
 
+
+/* settings to define the "Our Values" section */
+/* GRID 6 (auto)*/
 .MSQ-values {
   display: flex;
   flex-flow: column nowrap;
   max-width: 100%;
   padding: 1rem 10rem;
   align-items: center;
-  background-color: grey;
+  background-color: #DCC7AA;
 }
  .MSQ-values h3 {
       margin:  1% 0 1% 0;
   }
+
+/* settings to define the "Applications" section */
+/* GRID 7 (auto)*/
 .MSQ-applications {
   display: flex;
   flex-flow: column nowrap;
   padding: 1rem 8rem;
   align-items: center;
+  color: black;
   background: white;
 }
 
@@ -258,132 +307,16 @@ footer .right {
     text-align: center;
 }
 
+/* settings to define the "Our team 2" section with animation */
+/* GRID 9 (auto)*/
+
 .MSQ-team {
-  display: flex;
-  flex-flow: column nowrap;
-  align-items: center;
-  padding: 1rem 8rem;
-  color: black;
-  background: #aaa;
-}
-/* 3 column configuration */
-.MSQ-team > div {
-    background: #aaa;
-    display: flex;
-    flex-wrap: wrap;
-}
-.MSQ-team > div > div {
-    flex-grow: 1;
-    width: 33%;
-    padding: 1rem;
-    text-align: center;
-}
-
-
-
-ul {
-      padding:0;
-      list-style: none;
-  }
-  .footer-social-icons {
-      width: 350px;
-      display:block;
-      margin: 0 auto;
-      color: white;
-  }
-  .social-icon {
-      color: #fff;
-  }
-  ul.social-icons {
-      margin-top: 10px;
-  }
-  .social-icons li {
-      vertical-align: top;
-      display: inline;
-  }
-  .social-icons a {
-      color: #fff;
-      text-decoration: none;
-  }
-  .fa-facebook {
-      padding:10px 14px;
-      -o-transition:.5s;
-      -ms-transition:.5s;
-      -moz-transition:.5s;
-      -webkit-transition:.5s;
-      transition: .5s;
-      color: white;
-  }
-  .fa-facebook:hover {
-      background-color: #3d5b99;
-  }
-  .fa-twitter {
-      padding:10px 12px;
-      -o-transition:.5s;
-      -ms-transition:.5s;
-      -moz-transition:.5s;
-      -webkit-transition:.5s;
-      transition: .5s;
-  }
-  .fa-twitter:hover {
-      background-color: #00aced;
-  }
-  .fa-instagram {
-      padding:10px 14px;
-      -o-transition:.5s;
-      -ms-transition:.5s;
-      -moz-transition:.5s;
-      -webkit-transition:.5s;
-      transition: .5s;
-  }
-  .fa-instagram:hover {
-      background-color: #f09433;
-  }
-  /* .fa-youtube {
-      padding:10px 14px;
-      -o-transition:.5s;
-      -ms-transition:.5s;
-      -moz-transition:.5s;
-      -webkit-transition:.5s;
-      transition: .5s;
-
-  }
-  .fa-youtube:hover {
-      background-color: #e64a41;
-  }
-  .fa-linkedin {
-      padding:10px 14px;
-      -o-transition:.5s;
-      -ms-transition:.5s;
-      -moz-transition:.5s;
-      -webkit-transition:.5s;
-      transition: .5s;
-  }
-  .fa-linkedin:hover {
-      background-color: #0073a4;
-  }
-  .fa-google-plus {
-      padding:10px 9px;
-      -o-transition:.5s;
-      -ms-transition:.5s;
-      -moz-transition:.5s;
-      -webkit-transition:.5s;
-      transition: .5s;
-  }
-  .fa-google-plus:hover {
-      background-color: #e25714;
-  } */
-
-/*Our team section*/
-
-
-.MSQ-team2 {
     font-family: 'Source Sans Pro', sans-serif;
     line-height: 1.5;
     color: #323232;
     font-size: 15px;
     font-weight: 400;
-    background: white;
+    background: #F7C331;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-font-smoothing: antialiased;
@@ -505,4 +438,96 @@ ul {
     letter-spacing: 1px;
 }
 
+/* settings of social media icons */
+ul {
+      padding:0;
+      list-style: none;
+  }
+  .footer-social-icons {
+      width: 350px;
+      display:block;
+      margin: 0 auto;
+      color: white;
+  }
+  .social-icon {
+      color: #fff;
+  }
+  ul.social-icons {
+      margin-top: 10px;
+  }
+  .social-icons li {
+      vertical-align: top;
+      display: inline;
+  }
+  .social-icons a {
+      color: #fff;
+      text-decoration: none;
+  }
+  .fa-facebook {
+      padding:10px 14px;
+      -o-transition:.5s;
+      -ms-transition:.5s;
+      -moz-transition:.5s;
+      -webkit-transition:.5s;
+      transition: .5s;
+      color: white;
+  }
+  .fa-facebook:hover {
+      background-color: #3d5b99;
+  }
+  .fa-twitter {
+      padding:10px 12px;
+      -o-transition:.5s;
+      -ms-transition:.5s;
+      -moz-transition:.5s;
+      -webkit-transition:.5s;
+      transition: .5s;
+  }
+  .fa-twitter:hover {
+      background-color: #00aced;
+  }
+  .fa-instagram {
+      padding:10px 14px;
+      -o-transition:.5s;
+      -ms-transition:.5s;
+      -moz-transition:.5s;
+      -webkit-transition:.5s;
+      transition: .5s;
+  }
+  .fa-instagram:hover {
+      background-color: #f09433;
+  }
+  /* .fa-youtube {
+      padding:10px 14px;
+      -o-transition:.5s;
+      -ms-transition:.5s;
+      -moz-transition:.5s;
+      -webkit-transition:.5s;
+      transition: .5s;
 
+  }
+  .fa-youtube:hover {
+      background-color: #e64a41;
+  }
+  .fa-linkedin {
+      padding:10px 14px;
+      -o-transition:.5s;
+      -ms-transition:.5s;
+      -moz-transition:.5s;
+      -webkit-transition:.5s;
+      transition: .5s;
+  }
+  .fa-linkedin:hover {
+      background-color: #0073a4;
+  }
+  .fa-google-plus {
+      padding:10px 9px;
+      -o-transition:.5s;
+      -ms-transition:.5s;
+      -moz-transition:.5s;
+      -webkit-transition:.5s;
+      transition: .5s;
+  }
+  .fa-google-plus:hover {
+      background-color: #e25714;
+  } */

@@ -36,10 +36,9 @@
           <div class="">Log In</div> -->
           <div class=right class="footer-social-icons">
               <ul class="social-icons">
-                <!-- Tutorial used: https://www.thesitewizard.com/html-tutorial/open-links-in-new-window-or-tab.shtml -->
-                  <li><a href="https://www.facebook.com/studentquarters" rel="noopener noreferrer" target="_blank" class="social-icon"> <i class="fa fa-facebook"></i></a></li>
-                  <li><a href="https://twitter.com/studentquarters" rel="noopener noreferrer" target="_blank" class="social-icon"> <i class="fa fa-twitter"></i></a></li>
-                  <li><a href="https://www.instagram.com/studentquarters/" rel="noopener noreferrer" target="_blank" class="social-icon"> <i class="fa fa-instagram"></i></a></li>
+                  <li><a onclick="javascript:window.open('https://www.facebook.com/studentquarters/');" class="social-icon"> <i class="fa fa-facebook"></i></a></li>
+                  <li><a onclick="javascript:window.open('https://twitter.com/studentquarters/');" class="social-icon"> <i class="fa fa-twitter"></i></a></li>
+                  <li><a  onclick="javascript:window.open('https://www.instagram.com/studentquarters/');" class="social-icon"> <i class="fa fa-instagram"></i></a></li>
                   <!-- <li><a href="" class="social-icon"> <i class="fa fa-youtube"></i></a></li>
                   <li><a href="" class="social-icon"> <i class="fa fa-linkedin"></i></a></li>
                   <li><a href="" class="social-icon"> <i class="fa fa-google-plus"></i></a></li> -->
@@ -55,23 +54,31 @@
             
         <!-- Settings for the section "Welcome MSQ". -->
         <const class="MSQ-welcome main-section1">
-            <div> <h2> We are My Student Quarters, housing made for students - by students. </h2> </div>
+            <div> <h2> Housing made for Students - by Students </h2> </div>
             <div class="button-bar">
-                <div class="button landlord ">
-                    <p> <a href=#applications style="text-decoration: none; color: inherit"> Register as a Landlord </a></p>
-                </div>
-                <div class="button rent">
-                    <p> <a href=#applications style="text-decoration: none; color: inherit"> Rent your place </a></p>
-                </div>
-                <div class="button ambassador">
-                    <p> <a href=#applications style="text-decoration: none; color: inherit"> Become an Ambassador </a></p>
-                </div>
+
+                <const onclick="javascript:window.location.href=('#applications');" class="button">
+                <p> Register as a Landlord </p></const>
+
+                <const onclick="javascript:window.location.href=('#applications');" class="button">
+                <p> Rent your place </p></const>
+
+                <const onclick="javascript:window.location.href=('#applications');" class="button">
+                <p> Become an Ambassador </p></const>
             </div>
         </const>
 
+        <const class="BounceArrow">
+  <a href="#what" class="hide-on-palm arrow-down">
+    <span class="fa-stack fa-3x">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-chevron-down fa-stack-1x"></i>
+          </span>
+  </a>
+  </const>
 
         <!-- settings for the text slide section of "What is MSQ" --> 
-        <const class="MSQ-What MSQ-team2">
+        <const id=what class="MSQ-What MSQ-applications">
             <div class="slideshow-container">
                 
                 <div class="mySlides fade">
@@ -160,125 +167,112 @@
 </const>
 
 
+
+    
+    <const class="MSQ-team">
+        <div class="container">
+            <div class="row">
+                <div class="heading-title text-center">
+                    <h3 class="text-uppercase">the team </h3>
+                    <p class="p-top-30 half-txt">Our people are our greatest asset and biggest differentiator. They also believe in having a lot of fun along the way. </p>
+                </div>
+
+
+                <div class="col-md-4 col-sm-4">
+                    <div class="team-member">
+                        <div class="team-img">
+                            <img src="https://image.freepik.com/free-photo/man-standing-with-a-black-t-shirt_1187-1045.jpg" alt="team member" class="img-responsive">
+                        </div>
+                        <div class="team-hover">
+                            <div class="desk">
+                                <h4>Hi There !</h4>
+                                <p>Jessica, a life-long student, first came up with the idea for "My Student Quarters" after listening to the housing struggles her colleagues faced at her university. Some students slept in cars for weeks until their apartments were available. Others could not find flexible lease lengths and had to take out extra loans to pay for months they knew they would not be staying at their apartment. A handful were even limited to outrageously high priced properties due to specific housing accommodations. And one student (guess who) just really really hated unproductive, unorganized hours wasted online searching for housing near her university. Hence, My Student Quarters (MSQ) was born.</p>
+                            </div>
+                            <div class="s-link">
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                <a href="#"><i class="fa fa-google-plus"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-title">
+                        <h5>Jessica Holly Rehrig</h5>
+                        <span>founder &amp; ceo</span>
+                    </div>
+                </div>
+                        
+                <div class="col-md-4 col-sm-4">
+                    <div class="team-member">
+                        <div class="team-img">
+                            <img src="https://image.freepik.com/free-photo/elegant-man-with-thumbs-up_1149-1595.jpg" alt="team member" class="img-responsive">
+                        </div>
+                        <div class="team-hover">
+                            <div class="desk">
+                                <h4>Hello World</h4>
+                                <p>Raul, a passionate tech guy, loves to introduce himself as a hardcore FullStack developer.</p>
+                            </div>
+                            <div class="s-link">
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                <a href="#"><i class="fa fa-google-plus"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-title">
+                        <h5>Raul Cuevas Lopez</h5>
+                        <span>co-founder &amp; cto</span>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-4">
+                    <div class="team-member">
+                        <div class="team-img">
+                            <img src="https://image.freepik.com/free-photo/well-dressed-executive-with-crossed-arms_1098-3930.jpg" alt="team member" class="img-responsive">
+                        </div>
+                        <div class="team-hover">
+                            <div class="desk">
+                                <h4>Hi There !</h4>
+                                <p>Sohrab is a cofounder at My Student Quarters Inc., responsible for strategy, partnerships, finance, operations and growth.  Sohrab is a graduate of Haub’s School of Business at Saint Joseph’s University. Previously, he partially owned and operated a café on the Main Line (PA) which he sold for a small profit 2 years later after optimizing operations.  More recently, Sohrab joined forces at his father’s 2 automotive-related businesses in Philadelphia where, in 1 year, he grew the customer base from 1500 customers per year to over 2500 unique visitors.  One of Sohrab’s side projects had been an ecommerce website, kanyewestforpresident.com, back when there was buzz and a fringe fan base for such an event.  Subsequently, he saw into the future of the outsider-turned-politician trend early enough to purchase the domains markzuckerbergforpresident.com and markcubanforpresident.com.  Sohrab can also impressively juggle three round, equally-weighted objects for up to 3 consecutive minutes, which he does not like to brag about.</p>
+                            </div>
+                            <div class="s-link">
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                <a href="#"><i class="fa fa-google-plus"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-title">
+                        <h5>Sohrab Jamshidi</h5>
+                        <span>co-founder &amp; Chief Strategist</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </const>
+
 <!-- Settings for the section "MSQ Applications". -->
     <const id=applications class="MSQ-applications">
         <const> <h2> Our Service Applications: </h2> </const>
         <div> 
             <div> <h3> Landlord Application </h3>
-            <p> If you are interested in renting out your apartment, spare room, or vacation home please complete a "Landlord" application so we know who you are. For more details, click here. </p>
-                <const onclick="javascript:window.open('https://forms.zohopublic.eu/mystudentquarterscom/form/LandlordHouseApplication/formperma/5h9h1d9m395H2_akD3bf14jDH');" class="button apply-landlord">
-                <p> Landlord Application </p></const>
+            <p> If you are interested in renting out your apartment, spare room, or vacation home please complete a "Landlord" application so we know who you are. </p>
+                <const onclick="javascript:window.open('https://forms.zohopublic.eu/mystudentquarterscom/form/LandlordHouseApplication/formperma/5h9h1d9m395H2_akD3bf14jDH');" class="button">
+                <p> Register as a Landlord </p></const>
             </div>
-        </div>
-        <div>
+        
+        
             <div> <h3> Rent Your Place Application </h3>
-            <p> If you are renting out your location, please complete a "Rent Your Place" application so we know the details of your unit. For more details, click here. </p>
-                <const onclick="javascript:window.open('https://forms.zohopublic.eu/mystudentquarterscom/form/RentYourPlace/formperma/dJ90AbH5j2aGC26B5eDMK5g3a');" class="button apply-rent">
-                <p> Find a Rental</p> </const>
+            <p> If you are renting out your location, please complete a "Rent Your Place" application so we know the details of your unit. </p>
+               <const onclick="javascript:window.open('https://forms.zohopublic.eu/mystudentquarterscom/form/RentYourPlace/formperma/dJ90AbH5j2aGC26B5eDMK5g3a');" class="button">
+                <p> Rent your place</p> </const>
             </div>
-        </div>
-        <div>
+        
+        
             <div> <h3> MSQ Ambassador Application </h3>
-            <p> If you are interesting in working with the MSQ team in one way or another, please complete a "MSQ Ambassador" application. For more details, click here. </p>
-                <const onclick="javascript:window.open('https://forms.zohopublic.eu/mystudentquarterscom/form/MSQAmbassadorProgram/formperma/9G012410bKm46a23900f40Fk0');" class="button apply-ambassador">
+            <p> If you are interesting in working with the MSQ team in one way or another, please complete a "MSQ Ambassador" application.</p>
+                <const onclick="javascript:window.open('https://forms.zohopublic.eu/mystudentquarterscom/form/MSQAmbassadorProgram/formperma/9G012410bKm46a23900f40Fk0');" class="button">
                 <p> Become an Ambassador </p></const>
             </div>
         </div>
-    </const>
-
-    <!-- Settings for the section "MSQ Applications" -->
-    <const class="MSQ-team">
-      <const> <h2> Who we are: </h2> </const>
-      <div>
-        <div> <h3> Jessica Holly Rehrig <br> Founder & CEO </h3> 
-        <p> Jessica, a life-long student, first came up with the idea for "My Student Quarters" after listening to the housing struggles her colleagues faced at her university. Some students slept in cars for weeks until their apartments were available. Others could not find flexible lease lengths and had to take out extra loans to pay for months they knew they would not be staying at their apartment. A handful were even limited to outrageously high priced properties due to specific housing accommodations. And one student (guess who) just really really hated unproductive, unorganized hours wasted online searching for housing near her university. Hence, My Student Quarters (MSQ) was born. </p></div>
-      <div> <h3> Raul Cuevas Lopez <br> Co-Founder & CTO </h3> 
-        <p> If you are renting out your location, please complete a "Rent Your Place" application so we know the details of your unit. For more details, click here. </p>
-        </div>
-     <div> <h3> Sohrab Jamshidi <br> Co-Founder & Chief Strategist </h3>
-        <p> Sohrab is a cofounder at My Student Quarters Inc., responsible for strategy, partnerships, finance, operations and growth.  Sohrab is a graduate of Haub’s School of Business at Saint Joseph’s University. Previously, he partially owned and operated a café on the Main Line (PA) which he sold for a small profit 2 years later after optimizing operations.  More recently, Sohrab joined forces at his father’s 2 automotive-related businesses in Philadelphia where, in 1 year, he grew the customer base from 1500 customers per year to over 2500 unique visitors.  One of Sohrab’s side projects had been an ecommerce website, kanyewestforpresident.com, back when there was buzz and a fringe fan base for such an event.  Subsequently, he saw into the future of the outsider-turned-politician trend early enough to purchase the domains markzuckerbergforpresident.com and markcubanforpresident.com.  Sohrab can also impressively juggle three round, equally-weighted objects for up to 3 consecutive minutes, which he does not like to brag about. </p></div>
-        </div>
-    </const>
-    
-    <const class="MSQ-team2">
-            <div class="container">
-                    <div class="row">
-                        <div class="heading-title text-center">
-                            <h3 class="text-uppercase">The Team </h3>
-                            <p class="p-top-30 half-txt">Our people are our greatest asset and biggest differentiator. They also believe in having a lot of fun along the way. </p>
-                        </div>
-
-                        <div class="col-md-4 col-sm-4">
-                            <div class="team-member">
-                                <div class="team-img">
-                                    <img src="https://image.freepik.com/free-photo/man-standing-with-a-black-t-shirt_1187-1045.jpg" alt="team member" class="img-responsive">
-                                </div>
-                                <div class="team-hover">
-                                    <div class="desk">
-                                        <h4>Hi There !</h4>
-                                        <p>Jessica, a life-long student, first came up with the idea for "My Student Quarters" after listening to the housing struggles her colleagues faced at her university. Some students slept in cars for weeks until their apartments were available. Others could not find flexible lease lengths and had to take out extra loans to pay for months they knew they would not be staying at their apartment. A handful were even limited to outrageously high priced properties due to specific housing accommodations. And one student (guess who) just really really hated unproductive, unorganized hours wasted online searching for housing near her university. Hence, My Student Quarters (MSQ) was born.</p>
-                                    </div>
-                                    <div class="s-link">
-                                        <a href="#"><i class="fa fa-facebook"></i></a>
-                                        <a href="#"><i class="fa fa-twitter"></i></a>
-                                        <a href="#"><i class="fa fa-google-plus"></i></a>
-                                    </div>
-                                </div>
-                             </div>
-
-                            <div class="team-title">
-                                <h5>Jessica Holly Rehrig</h5>
-                                <span>founder &amp; ceo</span>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-4">
-                            <div class="team-member">
-                                <div class="team-img">
-                                    <img src="https://image.freepik.com/free-photo/elegant-man-with-thumbs-up_1149-1595.jpg" alt="team member" class="img-responsive">
-                                </div>
-                                <div class="team-hover">
-                                    <div class="desk">
-                                        <h4>Hello World</h4>
-                                        <p>Raul, a passionate tech guy, loves to introduce himself as a hardcore FullStack developer.</p>
-                                    </div>
-                                    <div class="s-link">
-                                        <a href="#"><i class="fa fa-facebook"></i></a>
-                                        <a href="#"><i class="fa fa-twitter"></i></a>
-                                        <a href="#"><i class="fa fa-google-plus"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="team-title">
-                                <h5>Raul Cuevas Lopez</h5>
-                                <span>co-founder &amp; ceo</span>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-4">
-                            <div class="team-member">
-                                <div class="team-img">
-                                    <img src="https://image.freepik.com/free-photo/well-dressed-executive-with-crossed-arms_1098-3930.jpg" alt="team member" class="img-responsive">
-                                </div>
-                                <div class="team-hover">
-                                    <div class="desk">
-                                        <h4>Hi There !</h4>
-                                        <p>Sohrab is a cofounder at My Student Quarters Inc., responsible for strategy, partnerships, finance, operations and growth.  Sohrab is a graduate of Haub’s School of Business at Saint Joseph’s University. Previously, he partially owned and operated a café on the Main Line (PA) which he sold for a small profit 2 years later after optimizing operations.  More recently, Sohrab joined forces at his father’s 2 automotive-related businesses in Philadelphia where, in 1 year, he grew the customer base from 1500 customers per year to over 2500 unique visitors.  One of Sohrab’s side projects had been an ecommerce website, kanyewestforpresident.com, back when there was buzz and a fringe fan base for such an event.  Subsequently, he saw into the future of the outsider-turned-politician trend early enough to purchase the domains markzuckerbergforpresident.com and markcubanforpresident.com.  Sohrab can also impressively juggle three round, equally-weighted objects for up to 3 consecutive minutes, which he does not like to brag about.</p>
-                                    </div>
-                                    <div class="s-link">
-                                        <a href="#"><i class="fa fa-facebook"></i></a>
-                                        <a href="#"><i class="fa fa-twitter"></i></a>
-                                        <a href="#"><i class="fa fa-google-plus"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="team-title">
-                                <h5>Sohrab Jamshidi</h5>
-                                <span>co-founder &amp; Chief Strategist</span>
-                            </div>
-                        </div>
-
-                    </div>
-
-                </div>
     </const>
 
     <!-- Settings for Footer. Source of the logo and words displayed -->
@@ -290,10 +284,9 @@
           <!-- Social Media Icons -->
           <div class=right class="footer-social-icons">
               <ul class="social-icons">
-                <!-- Tutorial used: https://www.thesitewizard.com/html-tutorial/open-links-in-new-window-or-tab.shtml -->
-                  <li><a href="https://www.facebook.com/studentquarters" rel="noopener noreferrer" target="_blank" class="social-icon"> <i class="fa fa-facebook"></i></a></li>
-                  <li><a href="https://twitter.com/studentquarters" rel="noopener noreferrer" target="_blank" class="social-icon"> <i class="fa fa-twitter"></i></a></li>
-                  <li><a href="https://www.instagram.com/studentquarters/" rel="noopener noreferrer" target="_blank" class="social-icon"> <i class="fa fa-instagram"></i></a></li>
+                  <li><a onclick="javascript:window.open('https://www.facebook.com/studentquarters/');" class="social-icon"> <i class="fa fa-facebook"></i></a></li>
+                  <li><a onclick="javascript:window.open('https://twitter.com/studentquarters/');" class="social-icon"> <i class="fa fa-twitter"></i></a></li>
+                  <li><a  onclick="javascript:window.open('https://www.instagram.com/studentquarters/');" class="social-icon"> <i class="fa fa-instagram"></i></a></li>
                   <!-- <li><a href="" class="social-icon"> <i class="fa fa-youtube"></i></a></li>
                   <li><a href="" class="social-icon"> <i class="fa fa-linkedin"></i></a></li>
                   <li><a href="" class="social-icon"> <i class="fa fa-google-plus"></i></a></li> -->
