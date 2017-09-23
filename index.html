@@ -1,19 +1,18 @@
 <!DOCTYPE html>
 
-<html lang="en-GB">
+<html lang="en">
   <!-- settings and imports needed to make the website work. links to the 2 .css files used, links to the fonts used, and the name that will be displayed in the tab -->
     <head>
         <meta charset="UTF-8">
         <!-- Responsive Design -->
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- import .css files -->
-        <link rel="stylesheet" href="css/style.css" />
-        <link rel="stylesheet" href="css/text_en.css" />
-    
+        <link rel="stylesheet" href="css/style.css"/>
+        
         <!-- import fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Just+Me+Again+Down+Here|Lato:300|Lato:700|Walter+Turncoat" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Just+Me+Again+Down+Here|Lato:300|Lato:700|Cookie|Source+Sans+Pro|Walter+Turncoat" rel="stylesheet">
         <!-- import social media icons -->
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
         <!-- favicon declarations -->
         <link rel="shortcut icon" href="https://firebasestorage.googleapis.com/v0/b/my-student-quarters.appspot.com/o/MSQ%20Logos%2FLogo_v1_Citrus.png?alt=media&token=979de018-6fba-4acf-b98c-4aaaef2d8e5e"/>
         <link rel="icon" sizes="16x16 32x32 64x64" href="https://firebasestorage.googleapis.com/v0/b/my-student-quarters.appspot.com/o/MSQ%20Logos%2FLogo_v1_Citrus.png?alt=media&token=979de018-6fba-4acf-b98c-4aaaef2d8e5e"/>
@@ -34,15 +33,9 @@
           <!-- <div>Menu</div>
           <div class="right">Sign Up</div>
           <div class="">Log In</div> -->
-          <div class=right class="footer-social-icons">
-              <ul class="social-icons">
-                  <li><a onclick="javascript:window.open('https://www.facebook.com/studentquarters/');" class="social-icon"> <i class="fa fa-facebook"></i></a></li>
-                  <li><a onclick="javascript:window.open('https://twitter.com/studentquarters/');" class="social-icon"> <i class="fa fa-twitter"></i></a></li>
-                  <li><a  onclick="javascript:window.open('https://www.instagram.com/studentquarters/');" class="social-icon"> <i class="fa fa-instagram"></i></a></li>
-                  <!-- <li><a href="" class="social-icon"> <i class="fa fa-youtube"></i></a></li>
-                  <li><a href="" class="social-icon"> <i class="fa fa-linkedin"></i></a></li>
-                  <li><a href="" class="social-icon"> <i class="fa fa-google-plus"></i></a></li> -->
-              </ul>
+          <div class="right" class="button-bar">
+               <const onclick="javascript:window.location.href=('#applications');" class="button">
+                <p> Donate </p></const>
           </div>
         </header>
 
@@ -58,24 +51,23 @@
             <div class="button-bar">
 
                 <const onclick="javascript:window.location.href=('#applications');" class="button">
-                <p> Register as a Landlord </p></const>
+                <p> Sign Up as Landlord </p></const>
+
+           
 
                 <const onclick="javascript:window.location.href=('#applications');" class="button">
-                <p> Rent your place </p></const>
-
-                <const onclick="javascript:window.location.href=('#applications');" class="button">
-                <p> Become an Ambassador </p></const>
+                <p> Sign Up as Student </p></const>
             </div>
         </const>
 
         <const class="BounceArrow">
-  <a href="#what" class="hide-on-palm arrow-down">
-    <span class="fa-stack fa-3x">
-            <i class="fa fa-circle fa-stack-2x"></i>
-            <i class="fa fa-chevron-down fa-stack-1x"></i>
-          </span>
-  </a>
-  </const>
+            <a href="#what" class="hide-on-palm arrow-down">
+                <span class="fa-stack fa-3x">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-chevron-down fa-stack-1x"></i>
+                </span>
+            </a>
+        </const>
 
         <!-- settings for the text slide section of "What is MSQ" --> 
         <const id=what class="MSQ-What MSQ-applications">
@@ -149,155 +141,148 @@
 
         </const>
 
-<!-- Settings for the section "MSQ Vision". -->
-<const class="MSQ-values">
-    <div> <h2> Our Values: </h2> </div>
-    <div> <h3> Quality </h3> </div>
-    <p>To provide an outstanding product with incomparable service</p>
-    <div> <h3> Integrity </h3> </div>
-    <p>We uphold the highest level of integrity in all our actions and expect the same from the My Student Quarters community</p>
-    <div> <h3> Customer Commitment </h3> </div>
-    <p>We strive to make a positive difference in our customers' housing accommodations. Our customers are more than just the renter, they are the foundation of our company.</p>
-    <div> <h3> Respect </h3> </div>
-    <p>Everyone, no matter how big or small, old or young, brown or purple, is welcomed with open arms to our community. </p><p> R-E-S-P-E-C-T</p>
-    <div> <h3> Convenience </h3> </div>
-    <p>I spent an hour checking emails today. I can’t get that hour back. We strive to make your time “house searching” efficient.</p>
-    <div> <h3> Freedom of Speech </h3> </div>
-    <p>This is your housing, we simply created the platform for it. We’re passing the baton to you. Reviews, discussion boards, and a company that makes space in the office for students</p> <p>All created with your voice in mind.</p>
-</const>
+        <!-- Settings for the section "MSQ Vision". -->
+        <const class="MSQ-values">
+            <div> <h2> Our Values: </h2> </div>
+            <div> <h3> Quality </h3> </div>
+            <p>To provide an outstanding product with incomparable service</p>
+            <div> <h3> Integrity </h3> </div>
+            <p>We uphold the highest level of integrity in all our actions and expect the same from the My Student Quarters community</p>
+            <div> <h3> Customer Commitment </h3> </div>
+            <p>We strive to make a positive difference in our customers' housing accommodations. Our customers are more than just the renter, they are the foundation of our company.</p>
+            <div> <h3> Respect </h3> </div>
+            <p>Everyone, no matter how big or small, old or young, brown or purple, is welcomed with open arms to our community. </p><p> R-E-S-P-E-C-T</p>
+            <div> <h3> Convenience </h3> </div>
+            <p>I spent an hour checking emails today. I can’t get that hour back. We strive to make your time “house searching” efficient.</p>
+            <div> <h3> Freedom of Speech </h3> </div>
+            <p>This is your housing, we simply created the platform for it. We’re passing the baton to you. Reviews, discussion boards, and a company that makes space in the office for students</p> <p>All created with your voice in mind.</p>
+        </const>
 
 
 
     
-    <const class="MSQ-team">
-        <div class="container">
-            <div class="row">
+        <const class="MSQ-team">
+            <div class="container">
+
                 <div class="heading-title text-center">
-                    <h3 class="text-uppercase">the team </h3>
-                    <p class="p-top-30 half-txt">Our people are our greatest asset and biggest differentiator. They also believe in having a lot of fun along the way. </p>
+                  <h3 class="text-uppercase">the team </h3>
+                  <p class="p-top-30 half-txt">Our people are our greatest asset and biggest differentiator. They also believe in having a lot of fun along the way. </p>
                 </div>
+                <div class="row">
+                    <div class="col-md-4 col-sm-4">
+                        <div class="team-member">
+                            <div class="team-img">
+                                <img src="https://image.freepik.com/free-photo/man-standing-with-a-black-t-shirt_1187-1045.jpg" alt="team member" class="img-responsive">
+                            </div>
+                            <div class="team-hover">
+                                <div class="desk">
+                                    <h4>Hi There !</h4>
+                                    <p>Jessica, a life-long student, first came up with the idea for "My Student Quarters" after listening to the housing struggles her colleagues faced at her university. Some students slept in cars for weeks until their apartments were available. Others could not find flexible lease lengths and had to take out extra loans to pay for months they knew they would not be staying at their apartment. A handful were even limited to outrageously high priced properties due to specific housing accommodations. And one student (guess who) just really really hated unproductive, unorganized hours wasted online searching for housing near her university. Hence, My Student Quarters (MSQ) was born.</p>
+                                </div>
+                                <div class="s-link">
+                                    <a href="mailto:jessica.rehrig@mystudentquarters.com"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+                                    <a href="#"><i class="fa fa-twitter"></i></a>
+                                    <a href="#"><i class="fa fa-google-plus"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="team-title">
+                            <h5>Jessica Holly Rehrig</h5>
+                            <span>founder &amp; ceo</span>
+                        </div>
+                    </div>
+                            
+                    <div class="col-md-4 col-sm-4">
+                        <div class="team-member">
+                            <div class="team-img">
+                                <img src="https://firebasestorage.googleapis.com/v0/b/my-student-quarters.appspot.com/o/MSQ%20Website%2FTeam%20Member%20Profiles%2FRaul_Profile_Pic2.jpeg?alt=media&token=dfc9a388-e26c-485d-a2d2-60b5bbe458d4" alt="team member" class="img-responsive">
+                            </div>
+                            <div class="team-hover">
+                                <div class="desk">
+                                    <h4>Hello World</h4>
+                                    <p>Raul, a passionate tech guy, loves to introduce himself as a hardcore FullStack developer.</p>
+                                </div>
+                                <div class="s-link">
+                                    <a href="mailto:raul.cuevas@mystudentquarters.com"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+                                    <a onclick="javascript:window.open('https://github.com/raulcuevas');><i class="fa fa-github" aria-hidden="true"></i></a>
+                                    <a onclick="javascript:window.open('https://angel.co/raul-cuevas');><i class="fa fa-angellist" aria-hidden="true"></i></a>
+                                    <a onclick="javascript:window.open('https://www.linkedin.com/in/raul-cuevas-941a8264/');><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="team-title">
+                            <h5>Raul Cuevas Lopez</h5>
+                            <span>co-founder &amp; cto</span>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4">
+                        <div class="team-member">
+                            <div class="team-img">
+                                <img src="https://firebasestorage.googleapis.com/v0/b/my-student-quarters.appspot.com/o/MSQ%20Website%2FTeam%20Member%20Profiles%2FSorhab_Profile_Pic2.jpeg?alt=media&token=bdbc277b-b7c7-4d84-bb2f-a91f9772f939" alt="team member" class="img-responsive">
+                            </div>
+                            <div class="team-hover">
+                                <div class="desk">
+                                    <h4>Hi There !</h4>
+                                    <p>Sohrab is a cofounder at My Student Quarters Inc., responsible for strategy, partnerships, finance, operations and growth.  Sohrab is a graduate of Haub’s School of Business at Saint Joseph’s University. Previously, he partially owned and operated a café on the Main Line (PA) which he sold for a small profit 2 years later after optimizing operations.  More recently, Sohrab joined forces at his father’s 2 automotive-related businesses in Philadelphia where, in 1 year, he grew the customer base from 1500 customers per year to over 2500 unique visitors.  One of Sohrab’s side projects had been an ecommerce website, kanyewestforpresident.com, back when there was buzz and a fringe fan base for such an event.  Subsequently, he saw into the future of the outsider-turned-politician trend early enough to purchase the domains markzuckerbergforpresident.com and markcubanforpresident.com.  Sohrab can also impressively juggle three round, equally-weighted objects for up to 3 consecutive minutes, which he does not like to brag about.</p>
+                                </div>
+                                <div class="s-link">
+                                    <a href="mailto:sohrab.jamshidi@mystudentquarters.com"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+                                    <a href="#"><i class="fa fa-twitter"></i></a>
+                                    <a onclick="javascript:window.open('#');><i class="fa fa-angellist" aria-hidden="true"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="team-title">
+                            <h5>Sohrab Jamshidi</h5>
+                            <span>co-founder &amp; Chief Strategist</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </const>
 
-                <div class="col-md-4 col-sm-4">
-                    <div class="team-member">
-                        <div class="team-img">
-                            <img src="https://image.freepik.com/free-photo/man-standing-with-a-black-t-shirt_1187-1045.jpg" alt="team member" class="img-responsive">
-                        </div>
-                        <div class="team-hover">
-                            <div class="desk">
-                                <h4>Hi There !</h4>
-                                <p>Jessica, a life-long student, first came up with the idea for "My Student Quarters" after listening to the housing struggles her colleagues faced at her university. Some students slept in cars for weeks until their apartments were available. Others could not find flexible lease lengths and had to take out extra loans to pay for months they knew they would not be staying at their apartment. A handful were even limited to outrageously high priced properties due to specific housing accommodations. And one student (guess who) just really really hated unproductive, unorganized hours wasted online searching for housing near her university. Hence, My Student Quarters (MSQ) was born.</p>
-                            </div>
-                            <div class="s-link">
-                                <a href="#"><i class="fa fa-facebook"></i></a>
-                                <a href="#"><i class="fa fa-twitter"></i></a>
-                                <a href="#"><i class="fa fa-google-plus"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="team-title">
-                        <h5>Jessica Holly Rehrig</h5>
-                        <span>founder &amp; ceo</span>
-                    </div>
+    <!-- Settings for the section "MSQ Applications". -->
+        <const id=applications class="MSQ-applications">
+            <const> <h2> Our Service Applications: </h2> </const>
+            <div> 
+                <div> <h3> Register as a Landlord </h3>
+                <p> If you are interested in renting out your apartment, spare room, or vacation home please complete a "Landlord" application so we know who you are. </p>
+                    <const onclick="javascript:window.open('https://forms.zohopublic.eu/mystudentquarterscom/form/LandlordHouseApplication/formperma/5h9h1d9m395H2_akD3bf14jDH');" class="button">
+                    <p> Register as a Landlord </p></const>
                 </div>
-                        
-                <div class="col-md-4 col-sm-4">
-                    <div class="team-member">
-                        <div class="team-img">
-                            <img src="https://image.freepik.com/free-photo/elegant-man-with-thumbs-up_1149-1595.jpg" alt="team member" class="img-responsive">
-                        </div>
-                        <div class="team-hover">
-                            <div class="desk">
-                                <h4>Hello World</h4>
-                                <p>Raul, a passionate tech guy, loves to introduce himself as a hardcore FullStack developer.</p>
-                            </div>
-                            <div class="s-link">
-                                <a href="#"><i class="fa fa-facebook"></i></a>
-                                <a href="#"><i class="fa fa-twitter"></i></a>
-                                <a href="#"><i class="fa fa-google-plus"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="team-title">
-                        <h5>Raul Cuevas Lopez</h5>
-                        <span>co-founder &amp; cto</span>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-4">
-                    <div class="team-member">
-                        <div class="team-img">
-                            <img src="https://image.freepik.com/free-photo/well-dressed-executive-with-crossed-arms_1098-3930.jpg" alt="team member" class="img-responsive">
-                        </div>
-                        <div class="team-hover">
-                            <div class="desk">
-                                <h4>Hi There !</h4>
-                                <p>Sohrab is a cofounder at My Student Quarters Inc., responsible for strategy, partnerships, finance, operations and growth.  Sohrab is a graduate of Haub’s School of Business at Saint Joseph’s University. Previously, he partially owned and operated a café on the Main Line (PA) which he sold for a small profit 2 years later after optimizing operations.  More recently, Sohrab joined forces at his father’s 2 automotive-related businesses in Philadelphia where, in 1 year, he grew the customer base from 1500 customers per year to over 2500 unique visitors.  One of Sohrab’s side projects had been an ecommerce website, kanyewestforpresident.com, back when there was buzz and a fringe fan base for such an event.  Subsequently, he saw into the future of the outsider-turned-politician trend early enough to purchase the domains markzuckerbergforpresident.com and markcubanforpresident.com.  Sohrab can also impressively juggle three round, equally-weighted objects for up to 3 consecutive minutes, which he does not like to brag about.</p>
-                            </div>
-                            <div class="s-link">
-                                <a href="#"><i class="fa fa-facebook"></i></a>
-                                <a href="#"><i class="fa fa-twitter"></i></a>
-                                <a href="#"><i class="fa fa-google-plus"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="team-title">
-                        <h5>Sohrab Jamshidi</h5>
-                        <span>co-founder &amp; Chief Strategist</span>
-                    </div>
+            
+                <div> <h3> Register as Student </h3>
+                <p> Interested in the MSQ rental experience? Register as a student to stay engaged in what MSQ has to offer and find off-campus housing around your university. It’s FREE and we won’t blow up your email. Win-Win, howbow dah?</p>
+                    <const onclick="javascript:window.open('https://forms.zohopublic.eu/mystudentquarterscom/form/MyStudentQuartersStudentApplication/formperma/jGFh2Hbk0A1k1H0C5KaC062f0');" class="button">
+                    <p> Register as a Student </p></const>
                 </div>
             </div>
-        </div>
-    </const>
-
-<!-- Settings for the section "MSQ Applications". -->
-    <const id=applications class="MSQ-applications">
-        <const> <h2> Our Service Applications: </h2> </const>
-        <div> 
-            <div> <h3> Landlord Application </h3>
-            <p> If you are interested in renting out your apartment, spare room, or vacation home please complete a "Landlord" application so we know who you are. </p>
-                <const onclick="javascript:window.open('https://forms.zohopublic.eu/mystudentquarterscom/form/LandlordHouseApplication/formperma/5h9h1d9m395H2_akD3bf14jDH');" class="button">
-                <p> Register as a Landlord </p></const>
-            </div>
-        
-        
-            <div> <h3> Rent Your Place Application </h3>
-            <p> If you are renting out your location, please complete a "Rent Your Place" application so we know the details of your unit. </p>
-               <const onclick="javascript:window.open('https://forms.zohopublic.eu/mystudentquarterscom/form/RentYourPlace/formperma/dJ90AbH5j2aGC26B5eDMK5g3a');" class="button">
-                <p> Rent your place</p> </const>
-            </div>
-        
-        
-            <div> <h3> MSQ Ambassador Application </h3>
-            <p> If you are interesting in working with the MSQ team in one way or another, please complete a "MSQ Ambassador" application.</p>
-                <const onclick="javascript:window.open('https://forms.zohopublic.eu/mystudentquarterscom/form/MSQAmbassadorProgram/formperma/9G012410bKm46a23900f40Fk0');" class="button">
-                <p> Become an Ambassador </p></const>
-            </div>
-        </div>
-    </const>
+        </const>
 
     <!-- Settings for Footer. Source of the logo and words displayed -->
         <footer>
-          <div > 
-            <a href="index.html">
-           <img class="logo-footer" src="https://firebasestorage.googleapis.com/v0/b/my-student-quarters.appspot.com/o/MSQ%20Logos%2FLogo_v1_White.png?alt=media&token=055b423c-3894-4541-8c79-d09bb70411eb" alt="logo-footer" /></a></div>
-          <div>©2017 My Student Quarters Inc.</div>
-          <!-- Social Media Icons -->
-          <div class=right class="footer-social-icons">
-              <ul class="social-icons">
+            <div > 
+                <a href="index.html">
+                <img class="logo-footer" src="https://firebasestorage.googleapis.com/v0/b/my-student-quarters.appspot.com/o/MSQ%20Logos%2FLogo_v1_White.png?alt=media&token=055b423c-3894-4541-8c79-d09bb70411eb" alt="logo-footer" /></a>
+            </div>
+            <div>©2017 My Student Quarters Inc.</div>
+            <!-- Social Media Icons -->
+            <div class=right class="footer-social-icons">
+                <ul class="social-icons">
                   <li><a onclick="javascript:window.open('https://www.facebook.com/studentquarters/');" class="social-icon"> <i class="fa fa-facebook"></i></a></li>
                   <li><a onclick="javascript:window.open('https://twitter.com/studentquarters/');" class="social-icon"> <i class="fa fa-twitter"></i></a></li>
                   <li><a  onclick="javascript:window.open('https://www.instagram.com/studentquarters/');" class="social-icon"> <i class="fa fa-instagram"></i></a></li>
                   <!-- <li><a href="" class="social-icon"> <i class="fa fa-youtube"></i></a></li>
                   <li><a href="" class="social-icon"> <i class="fa fa-linkedin"></i></a></li>
                   <li><a href="" class="social-icon"> <i class="fa fa-google-plus"></i></a></li> -->
-              </ul>
-          </div>
-          <div>
-          <a href="mailto:info@mystudentquarters.com" style="text-decoration: none; color: inherit">info@mystudentquarters.com</a>
-      </div>
-          <div class=right>
-            <a href="terms.html" style="text-decoration: none; color: inherit">Terms &amp; Conditions</a>
-
+                </ul>
+            </div>
+            <div>
+                <a href="mailto:info@mystudentquarters.com" style="text-decoration: none; color: inherit">info@mystudentquarters.com</a>
+            </div>
+            <div class=right>
+                <a href="terms.html" style="text-decoration: none; color: inherit">Terms &amp; Conditions</a>
             </div>
         </footer>
 
