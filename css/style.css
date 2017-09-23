@@ -4,7 +4,6 @@
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,200italic,300,300italic,400italic,600,600italic,700,700italic,900,900italic);
 
 html {
-  
   font-family: 'Source Sans Pro', sans-serif;
   line-height: 1.5;
   color: #323232;
@@ -85,6 +84,8 @@ footer .right {
   height: 30px;
 }
 
+
+
 /* settings to define the "My Student Quarters" main title */
 /* GRID 2 (10rem)*/
 .title {
@@ -117,6 +118,7 @@ footer .right {
   display: flex;
   justify-content: space-between;
   width: 100%;
+  align-self: center;
 }
 
 .button {
@@ -129,7 +131,8 @@ footer .right {
   text-align:    center;
   text-shadow:   none;
   cursor: pointer;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
+  
 }
 
 /* settings to define the "bounce down arrow" */
@@ -353,7 +356,6 @@ footer .right {
     margin: 0 auto;
     display: inline-block;
     line-height: 25px;
-    color: #7e7e7e;
     self-align: center;
 }
 .text-uppercase {
@@ -552,6 +554,8 @@ ul {
 
 
 
+
+
 /* Bootstrap styles:*/
 
 img{vertical-align:middle}
@@ -618,3 +622,7 @@ p {
 #tab-terms4:checked ~ #content4 {
   display: block;
 }
+
+
+
+
