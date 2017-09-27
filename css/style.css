@@ -40,16 +40,20 @@ header {
   align-items: center;
   /* justify-content: space-around;
   /* font */
-  font-family: 'Cookie', cursive;
-  font-size: 20px;
+  font: normal 700 20px/1 'Cookie', sans-serif;
   /* bottom border line */
   border-bottom: 1px white solid;
-  margin: 1rem 3rem;
+  margin: 1rem 1rem;
+  padding: 1rem 0;
   color: white;
 }
 /* margins and alignment for the header */
   header div {
     margin-left: 20px;
+  }
+
+  header h5{
+    font-size: 25px;
   }
   header .right {
     margin-left: auto;
@@ -99,9 +103,9 @@ footer .right {
   
 }
   ul-donate {
-    margin-left: 87%;
+    margin: 5rem 0 0 46%;
     text-align: center;
-    position: fixed;
+    position: relative;
     cursor: pointer;
 
   }
@@ -139,6 +143,7 @@ footer .right {
     position: absolute;
     left: 0;
     top: 0;
+     
     width: 100%;
     height: 100%;
     padding-top: 30px;    
@@ -265,14 +270,14 @@ footer .right {
 .button {
   background:    #f7c331;
   border-radius: 5px;
-  padding:       .5rem 15px;
+  padding:       1rem 1rem 0;
   color:         #ffffff;
   display:       inline-block;
   font:          normal 700 18px/1 "Source Sans Pro", sans-serif;
   text-align:    center;
   text-shadow:   none;
   cursor: pointer;
-  margin-bottom: 1rem;
+  margin: auto 1rem 1rem;
   
 }
 
@@ -333,7 +338,7 @@ footer .right {
           align-items: center;
           width: 100%;
           position: relative;
-          margin: 2rem;
+          margin: auto;
           min-height: 23rem;
 
 
@@ -349,7 +354,7 @@ footer .right {
           margin-top: -22px;
           color: grey;
           font-weight: bold;
-          font-size: 18px;
+          font-size: 30px;
           transition: 0.6s ease;
           border-radius: 0 3px 3px 0;
         }
@@ -368,11 +373,14 @@ footer .right {
         /* Caption text */
         .text {
           color: #323232;
-          padding: 0 5rem;
+          padding: 0 1rem;
           width: 100%;
           text-align: center;
           align-content: center;
           margin: -3rem auto;
+        }
+        .text h2 {
+          margin-bottom: 2rem;
         }
 
         /* The dots/bullets/indicators */
@@ -418,7 +426,7 @@ footer .right {
   display: flex;
   flex-flow: column nowrap;
   max-width: 100%;
-  padding: 1rem 10rem;
+  padding: 1rem 5rem;
   align-items: center;
   background-color: #DCC7AA;
 }
@@ -435,7 +443,7 @@ footer .right {
 .MSQ-applications {
   display: flex;
   flex-flow: column nowrap;
-  padding: 5rem 7rem;
+  padding: 5rem 3rem;
   align-items: center;
   background: white;
   min-height: 25rem;
@@ -448,8 +456,8 @@ footer .right {
 }
 .MSQ-applications > div > div {
     flex-grow: 1;
-    width: 33%;
-    padding: 1rem;
+    width: 50%;
+    padding: 3rem 3rem;
     text-align: center;
 }
 
@@ -458,7 +466,7 @@ footer .right {
 .MSQ-donate {
   display: flex;
   flex-flow: column nowrap;
-  padding: 5rem 7rem;
+  padding: 5rem 5rem;
   align-items: center;
   background: #F7882F;
   min-height: 25rem;
@@ -514,7 +522,7 @@ footer .right {
     padding-top: 30px;
 }
 .half-txt {
-    width: 60%;
+    width: 80%;
     margin: 0 auto;
     display: inline-block;
     line-height: 25px;
