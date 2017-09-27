@@ -12,6 +12,8 @@ html {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-font-smoothing: antialiased;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%
 }
 
 /* settings to define the structure of the body. GRID is selected to arrange the sections in rows */
@@ -19,8 +21,10 @@ body {
   display: grid;
   grid-template-rows: auto;
   align-content: center;
-  margin: 0 auto;
-  min-height: 100%;
+  margin: 0;
+  /*min-height: 100%;*/
+  height: 100%
+  width: 100%;
   background-image: url(https://firebasestorage.googleapis.com/v0/b/my-student-quarters.appspot.com/o/MSQ%20Website%2FLanding%20page%20Photo.png?alt=media&token=b86a316b-6531-4ca8-a472-0b38c2ce8597);
   background-position: center;
   background-attachment: fixed;
@@ -60,14 +64,17 @@ header {
 /* GRID 10 (5rem)*/  
 footer {
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
   align-items: center;
   background: #6B7A8F;
   color: white;
   /* margins and alignment for the footer
   margin: 1rem 3rem;*/
   padding: .5rem 2rem;
+  position: relative;
   
+  bottom: 0;
+  left: 0;
   /* font */
   font-family: 'Cookie', cursive;
   font-size: 20px;
@@ -84,6 +91,127 @@ footer .right {
   height: 30px;
 }
 
+/* Settings for the Donate Button: */
+
+.Donate-button{
+  display: flex;
+  flex-flow: row nowrap;
+  
+}
+  ul-donate {
+    margin-left: 87%;
+    text-align: center;
+    position: fixed;
+    cursor: pointer;
+
+  }
+
+  li-donate {
+    list-style: none;
+    position: relative;
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+  }
+
+  @-moz-keyframes rotate {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(-360deg);}
+  }
+
+  @-webkit-keyframes rotate {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(-360deg);}
+  }
+
+  @-o-keyframes rotate {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(-360deg);}
+  }
+
+  @keyframes rotate {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(-360deg);}
+  }
+
+  .round {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding-top: 30px;    
+    text-decoration: none;    
+    text-align: center;
+    font-size: 25px;    
+    text-shadow: 0 1px 0 rgba(255,255,255,.7);
+    letter-spacing: -.065em;
+    font-family: "Source Sans Pro", sans-serif;   
+    -webkit-transition: all .25s ease-in-out;
+    -o-transition: all .25s ease-in-out;
+    -moz-transition: all .25s ease-in-out;
+    transition: all .25s ease-in-out;
+    box-shadow: 2px 2px 7px rgba(0,0,0,.2);
+    border-radius: 300px;
+    z-index: 1;
+    border-width: 4px;
+    border-style: solid;
+  }
+
+  .round:hover {
+    width: 130%;
+    height: 130%;
+    left: -15%;
+    top: -15%;
+    font-size: 33px;
+    padding-top: 38px;
+    -webkit-box-shadow: 5px 5px 10px rgba(0,0,0,.1);
+    -o-box-shadow: 5px 5px 10px rgba(0,0,0,.1);
+    -moz-box-shadow: 5px 5px 10px rgba(0,0,0,.1);
+    box-shadow: 5px 5px 10px rgba(0,0,0,.1);
+    z-index: 2;
+    border-size: 10px;
+    -webkit-transform: rotate(-360deg);
+    -moz-transform: rotate(-360deg);
+    -o-transform: rotate(-360deg);
+    transform: rotate(-360deg);
+  }
+
+  a.yellow {
+    background-color: rgba(252,227,1,1);
+    color: rgba(153,38,0,1);
+    border-color: #f7c331;
+  }
+
+  a.yellow:hover {
+    color: rgba(252,227,1,1);
+  }
+
+  .round span.round {
+    display: block;
+    opacity: 0;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+    font-size: 1px;
+    border: none;
+    padding: 40% 20% 0 20%;
+    color: #fff;
+  }
+
+  .round span:hover {
+    opacity: .85;
+    font-size: 16px;
+    -webkit-text-shadow: 0 1px 1px rgba(0,0,0,.5);
+    -moz-text-shadow: 0 1px 1px rgba(0,0,0,.5);
+    -o-text-shadow: 0 1px 1px rgba(0,0,0,.5);
+    text-shadow: 0 1px 1px rgba(0,0,0,.5);  
+  }
+  .yellow span {
+    background: rgba(161,145,0,.7); 
+  }
 
 
 /* settings to define the "My Student Quarters" main title */
@@ -93,6 +221,7 @@ footer .right {
   font-family: 'Cookie', cursive;
   font-size: 50px;
   color: white;
+  margin-top: 2rem;
 }
 
 /* settings to define the "Welcome slogan and buttons" section */
@@ -113,12 +242,24 @@ footer .right {
 .MSQ-welome {
 }
 
+.MSQ-thanks {
+  margin: 10rem auto 12.5rem;
+}
+
 .button-bar {
-  margin: 2rem 2rem 0;
+  margin: 1rem 2rem 0;
   display: flex;
   justify-content: space-between;
   width: 100%;
   align-self: center;
+}
+
+.button-thanks {
+  margin: 1rem 2rem 0;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  align-items: center;
 }
 
 .button {
@@ -183,7 +324,7 @@ footer .right {
 * {box-sizing:border-box}
         .mySlides {
           display: grid;
-          background-color: white;
+          
         }
 
         /* Slideshow container */
@@ -285,14 +426,19 @@ footer .right {
       margin:  1% 0 1% 0;
   }
 
+  .MSQ-values p {
+    text-align: center;
+  }
+
 /* settings to define the "Applications" section */
 /* GRID 7 (auto)*/
 .MSQ-applications {
   display: flex;
   flex-flow: column nowrap;
-  padding: 1rem 8rem;
+  padding: 5rem 7rem;
   align-items: center;
   background: white;
+  min-height: 25rem;
 }
 
 /* 3 column configuration */
@@ -307,22 +453,38 @@ footer .right {
     text-align: center;
 }
 
+/* settings to define the "DONATE" section */
+/* GRID 7 (auto)*/
+.MSQ-donate {
+  display: flex;
+  flex-flow: column nowrap;
+  padding: 5rem 7rem;
+  align-items: center;
+  background: #F7882F;
+  min-height: 25rem;
+}
+
+/* 3 column configuration */
+.MSQ-donate > div {
+    display: flex;
+    flex-wrap: wrap;
+}
+.MSQ-donate > div > div {
+    flex-grow: 1;
+    width: 33%;
+    padding: 1rem;
+    text-align: center;
+}
+
+
 /* settings to define the "Our team 2" section with animation */
 /* GRID 9 (auto)*/
 
 .MSQ-team {
   display: flex;
   flex-flow: column nowrap;
-    font-family: 'Source Sans Pro', sans-serif;
-    line-height: 1.5;
-    color: #323232;
-    font-size: 15px;
-    font-weight: 400;
-    background: #F7C331;
-    text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased;
-    -moz-font-smoothing: antialiased;
-    text-align: center;
+  background: #F7C331;  
+  text-align: center;
 }
 
 /* 3 column configuration */
@@ -344,7 +506,7 @@ footer .right {
     text-align: center;
 }
 .heading-title h3 {
-    margin-bottom: 0;
+    margin-bottom: 1rem;
     letter-spacing: 2px;
     font-weight: normal;
 }
@@ -489,6 +651,7 @@ ul {
       -webkit-transition:.5s;
       transition: .5s;
       color: white;
+      cursor: pointer;
   }
   .fa-facebook:hover {
       background-color: #3d5b99;
@@ -500,6 +663,7 @@ ul {
       -moz-transition:.5s;
       -webkit-transition:.5s;
       transition: .5s;
+      cursor: pointer;
   }
   .fa-twitter:hover {
       background-color: #00aced;
@@ -511,11 +675,49 @@ ul {
       -moz-transition:.5s;
       -webkit-transition:.5s;
       transition: .5s;
+      cursor: pointer;
   }
   .fa-instagram:hover {
       background-color: #f09433;
   }
-  /* .fa-youtube {
+  
+  .fa-linkedin-square {
+      padding:10px 14px;
+      -o-transition:.5s;
+      -ms-transition:.5s;
+      -moz-transition:.5s;
+      -webkit-transition:.5s;
+      transition: .5s;
+      cursor: pointer;
+  }
+  .fa-linkedin-square:hover {
+      background-color: #0073a4;
+  }
+  .fa-github {
+      padding:10px 14px;
+      -o-transition:.5s;
+      -ms-transition:.5s;
+      -moz-transition:.5s;
+      -webkit-transition:.5s;
+      transition: .5s;
+      cursor: pointer;
+  }
+  /*.fa-github:hover {
+      background-color: #0073a4;
+  }*/
+  .fa-angellist {
+      padding:10px 14px;
+      -o-transition:.5s;
+      -ms-transition:.5s;
+      -moz-transition:.5s;
+      -webkit-transition:.5s;
+      transition: .5s;
+      cursor: pointer;
+  }
+  /*.fa-angellist:hover {
+      background-color: #0073a4;
+  }
+  .fa-youtube {
       padding:10px 14px;
       -o-transition:.5s;
       -ms-transition:.5s;
@@ -527,17 +729,7 @@ ul {
   .fa-youtube:hover {
       background-color: #e64a41;
   }
-  .fa-linkedin {
-      padding:10px 14px;
-      -o-transition:.5s;
-      -ms-transition:.5s;
-      -moz-transition:.5s;
-      -webkit-transition:.5s;
-      transition: .5s;
-  }
-  .fa-linkedin:hover {
-      background-color: #0073a4;
-  }
+
   .fa-google-plus {
       padding:10px 9px;
       -o-transition:.5s;
@@ -579,7 +771,7 @@ p {
 }
 
 .MSQ-terms {
-  min-width: 320px;
+  
   max-width: 1000px;
   padding: 50px;
   margin: 1rem auto;
@@ -623,6 +815,40 @@ p {
   display: block;
 }
 
+/* responsive Design for-phone-only*
+@media (max-width: 599px) {
 
+}
+/* responsive Design for-tablet-portrait-up*
+@media (min-width: 600px max-width: 899px) {
+  footer {
+  
+  flex-flow: column wrap;
+  align-items: center;
+  
+  /* margins and alignment for the footer
+  margin: 1rem 3rem;*
+  padding: .5rem 2rem;
 
+}
+footer div {
+  margin-left: 1rem;
+}
+footer .right {
+  align-items: center;
+}
+}
+/* responsive Design for-tablet-landscape-up*
+@media (min-width: 900px) {
+  
+}
+/* responsive Design for-desktop-up*
+@media (min-width: 1200px) {
+  
+}
+/* responsive Design for-big-desktop-up*
+@media (min-width: 1800px) {
+  
+}
 
+*/
