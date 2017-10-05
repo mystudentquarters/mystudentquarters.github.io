@@ -827,6 +827,9 @@ p {
 
 /*responsive Design for-phone-only*/
 @media screen and (max-width: 599px) {
+body {
+  background-attachment: fixed;
+}
 
 header h5{
 color: transparent;
