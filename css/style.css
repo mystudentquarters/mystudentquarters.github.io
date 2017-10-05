@@ -43,7 +43,7 @@ header {
   font: normal 700 20px/1 'Cookie', sans-serif;
   /* bottom border line */
   border-bottom: 1px white solid;
-  margin: 1rem 1rem;
+  margin: 0 1rem 1rem;
   padding: 1rem 0;
   color: white;
 }
@@ -101,9 +101,10 @@ footer .right {
   display: flex;
   flex-flow: row nowrap;
   
+  
 }
   ul-donate {
-    margin: 5rem 0 0 46%;
+    margin: 0 0 0 46.5%;
     text-align: center;
     position: relative;
     cursor: pointer;
@@ -236,7 +237,7 @@ footer .right {
   flex-flow: column nowrap;
   background: rgba(0, 0, 0, .5); /* translucid background*/
   max-width: 800px;
-  margin: 2.5rem auto 10rem auto;
+  margin: 2.5rem auto 2rem auto;
   padding: 1rem 50px;
   align-items: center;
   text-align: center;
@@ -339,7 +340,7 @@ footer .right {
           width: 100%;
           position: relative;
           margin: auto;
-          min-height: 23rem;
+          min-height: 24rem;
 
 
         }
@@ -781,6 +782,7 @@ p {
 .MSQ-terms {
   
   max-width: 1000px;
+  
   padding: 50px;
   margin: 1rem auto;
   background: white;
@@ -823,40 +825,46 @@ p {
   display: block;
 }
 
-/* responsive Design for-phone-only*
-@media (max-width: 599px) {
+/*responsive Design for-phone-only*/
+@media screen and (max-width: 599px) {
 
+header h5{
+color: transparent;
+font-size: 1px;
 }
-/* responsive Design for-tablet-portrait-up*
-@media (min-width: 600px max-width: 899px) {
-  footer {
-  
-  flex-flow: column wrap;
-  align-items: center;
-  
-  /* margins and alignment for the footer
-  margin: 1rem 3rem;*
-  padding: .5rem 2rem;
-
-}
-footer div {
-  margin-left: 1rem;
-}
+footer {
+  display: flex;
+  flex-flow: column nowrap;
+  text-align: center;
+  }
 footer .right {
-  align-items: center;
+  margin: auto;
 }
+.main-section1 > div > div {
+  flex-flow: row nowrap;
 }
-/* responsive Design for-tablet-landscape-up*
+
+.MSQ-applications > div > div {
+  width: 100%;
+  }
+.MSQ-donate > div > div {
+  width: 100%;
+  }
+}
+/* responsive Design for-tablet-portrait-up*/
+@media screen and (min-width: 600px) {
+  
+}
+/* responsive Design for-tablet-landscape-up*/
 @media (min-width: 900px) {
   
 }
-/* responsive Design for-desktop-up*
+/* responsive Design for-desktop-up*/
 @media (min-width: 1200px) {
   
 }
-/* responsive Design for-big-desktop-up*
+/* responsive Design for-big-desktop-up*/
 @media (min-width: 1800px) {
   
 }
 
-*/
