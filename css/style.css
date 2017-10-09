@@ -24,17 +24,22 @@ body {
   grid-template-rows: auto;
   align-content: center;
   margin: 0;
+}
+
+.Background {
   background-image: url(https://firebasestorage.googleapis.com/v0/b/my-student-quarters.appspot.com/o/MSQ%20Website%2FLanding%20page%20Photo.png?alt=media&token=b86a316b-6531-4ca8-a472-0b38c2ce8597);
   background-repeat: no-repeat;
-  background-position: center;
-  background-attachment: fixed;
-  background-size: cover; 
+  background-size: cover;
+  /* background-position: center;
+ background-attachment: fixed;*/
+   
   -webkit-background-size: cover; 
   -moz-background-size: cover; 
   -o-background-size: cover;
 
-}
+  
 
+}
 
 /* setting to define the Header. FLEX is used to structure the section and the font is also different here */
 /* GRID 1 (5rem)*/
@@ -304,15 +309,20 @@ footer .right {
 .BounceArrow { 
   width: 100%; 
   text-align: center;
-  margin:2rem 0 4rem 0;
+  margin-bottom: 4rem;
+  justify-content: center;
+  align-self: center;
+  align-items: center;
+
 }
 .middle, .go-here {
   position: top;
   height: 10em;
 }
-.fa-circle { color: transparent; }
+.fa-circle { color: transparent;}
 .arrow-down { 
-  color: white; 
+  color: white;
+
 }
   .fa-stack {
       animation: bounce 2s infinite;
@@ -537,7 +547,7 @@ footer .right {
     margin: 0 auto;
     display: inline-block;
     line-height: 25px;
-    self-align: center;
+    align-self: center;
 }
 .text-uppercase {
     text-transform: uppercase;
@@ -843,7 +853,7 @@ font-size: 14px;
 }
 html p {font-size: 12px;}
 
-body {
+.Background {
     background-color: #6B7A8F;
     background-image: none;
 
