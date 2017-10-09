@@ -856,7 +856,9 @@ html p {font-size: 12px;}
     background-image: none;
 
 }
-
+.title h1{
+  font-size: 70px;
+}
 
 header h5{
 color: transparent;
@@ -936,9 +938,6 @@ footer .right {
     background-image: none;
 }
 
-.title {
-  font-size: 20px;
-}
 .prev, .next {
   display: none ;
  } 
