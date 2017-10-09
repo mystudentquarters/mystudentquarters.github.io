@@ -836,15 +836,17 @@ p {
 }
 
 /*responsive Design for-phone-only*/
-@media screen and (max-width: 899px) {
+@media screen and (max-width: 599px) {
+
+html {
+font-size: 14px;
+}
 
 body {
     background-color: #6B7A8F;
     background-image: none;
 }
-p {
-  font-size: 14px;
-}
+
 
 header h5{
 color: transparent;
@@ -859,6 +861,11 @@ footer .right {
   margin: auto;
 }
 
+.main-section1 {
+  max-width: 600px;
+  margin: 2.5rem auto 5rem auto;
+  padding: 1rem;
+}
 .main-section1 > div > div {
   flex-flow: row nowrap;
 }
@@ -875,7 +882,7 @@ footer .right {
 }
 
 .MSQ-applications {
-  padding: 1rem;
+  padding: 2rem;
   min-height: 5rem;
 }
 
@@ -886,13 +893,14 @@ footer .right {
   }
 
 .MSQ-donate {
-  padding: 1rem 0 0 0;
+  padding: 3rem 0 0 0;
+  margin-bottom: 0:;
 }
 .MSQ-donate > div > div {
   width: 100%;
   }
 
-  .BounceArrow { 
+.BounceArrow { 
   display: none ;
 }
 
@@ -912,19 +920,37 @@ footer .right {
 
 }
 /* responsive Design for-tablet-portrait-up*/
-@media screen and (min-width: 600px) {
-  
+@media screen and (max-width: 899) {
+  body {
+    background-color: #6B7A8F;
+    background-image: none;
 }
-/* responsive Design for-tablet-landscape-up*/
+.prev, .next {
+  display: none ;
+ } 
+
+ .team-hover {
+  display: none ;
+ }
+
+.mySlides {
+  padding: 1rem 0;
+ } 
+.slideshow-container {
+  padding: 3rem 0 2rem 0;
+
+}
+}
+/* responsive Design for-tablet-landscape-up
 @media screen and (min-width: 900px) {
   
-}
-/* responsive Design for-desktop-up*/
+}*/
+/* responsive Design for-desktop-up
 @media screen and (min-width: 1200px) {
   
-}
-/* responsive Design for-big-desktop-up*/
+}*/
+/* responsive Design for-big-desktop-up
 @media screen and (min-width: 1800px) {
   
-}
+}*/
 
