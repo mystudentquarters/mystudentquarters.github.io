@@ -100,7 +100,7 @@ footer .right {
 }
 
 /* Settings for the Donate Button: */
-
+/*
 .Donate-button{
   display: flex;
   flex-flow: row nowrap;
@@ -222,7 +222,7 @@ footer .right {
   .yellow span {
     background: rgba(161,145,0,.7); 
   }
-
+*/
 
 /* settings to define the "My Student Quarters" main title */
 /* GRID 2 (10rem)*/
@@ -240,8 +240,8 @@ footer .right {
   display: flex;
   flex-flow: column nowrap;
   background: rgba(0, 0, 0, .5); /* translucid background*/
-  max-width: 800px;
-  margin: 2.5rem auto 2rem auto;
+  max-width: 600px;
+  margin: 2.5rem auto 5rem auto;
   padding: 1rem 50px;
   align-items: center;
   text-align: center;
@@ -260,7 +260,6 @@ footer .right {
   margin: 1rem 2rem 0;
   display: flex;
   justify-content: space-between;
-  width: 100%;
   align-self: center;
 }
 
@@ -281,6 +280,8 @@ footer .right {
   font:          normal 700 18px/1 "Source Sans Pro", sans-serif;
   text-align:    center;
   text-shadow:   none;
+
+
   cursor: pointer;
   margin: auto 1rem 1rem;
   
@@ -303,7 +304,7 @@ footer .right {
 .BounceArrow { 
   width: 100%; 
   text-align: center;
-  margin-bottom: 2rem;
+  margin:2rem 0 4rem 0;
 }
 .middle, .go-here {
   position: top;
@@ -329,6 +330,7 @@ footer .right {
   padding: 2rem;
   align-items: center;
   background-color: white;
+
 }
 
 * {box-sizing:border-box}
@@ -345,6 +347,7 @@ footer .right {
           position: relative;
           margin: auto;
           min-height: 24rem;
+          
 
 
         }
@@ -475,6 +478,8 @@ footer .right {
   align-items: center;
   background: #F7882F;
   min-height: 25rem;
+  text-align: center;
+
 }
 
 /* 3 column configuration */
@@ -484,7 +489,7 @@ footer .right {
 }
 .MSQ-donate > div > div {
     flex-grow: 1;
-    width: 33%;
+    width: 50%;
     padding: 1rem;
     text-align: center;
 }
@@ -498,6 +503,7 @@ footer .right {
   flex-flow: column nowrap;
   background: #F7C331;  
   text-align: center;
+  padding-top: 1rem;
 }
 
 /* 3 column configuration */
@@ -830,10 +836,14 @@ p {
 }
 
 /*responsive Design for-phone-only*/
-@media screen and (max-width: 599px) {
+@media screen and (max-width: 899px) {
 
 body {
-    background-size: 1500px;
+    background-color: #6B7A8F;
+    background-image: none;
+}
+p {
+  font-size: 14px;
 }
 
 header h5{
@@ -848,31 +858,73 @@ footer {
 footer .right {
   margin: auto;
 }
+
 .main-section1 > div > div {
   flex-flow: row nowrap;
 }
 
+.MSQ-welcome >div {
+  flex-flow: wrap;
+  width: 100%;
+  justify-content: center;
+
+}
+
+.MSQ-values {
+  padding: 1rem;
+}
+
+.MSQ-applications {
+  padding: 1rem;
+  min-height: 5rem;
+}
+
 .MSQ-applications > div > div {
   width: 100%;
+  padding: 1rem;
+
   }
+
+.MSQ-donate {
+  padding: 1rem 0 0 0;
+}
 .MSQ-donate > div > div {
   width: 100%;
   }
+
+  .BounceArrow { 
+  display: none ;
+}
+
+.prev, .next {
+  display: none ;
+ } 
+
+ .team-hover {
+  display: none ;
+ }
+
+.mySlides {
+  padding: 1rem 0;
+ } 
+.slideshow-container {
+  padding: 3rem 0 2rem 0;
+
 }
 /* responsive Design for-tablet-portrait-up*/
 @media screen and (min-width: 600px) {
   
 }
 /* responsive Design for-tablet-landscape-up*/
-@media (min-width: 900px) {
+@media screen and (min-width: 900px) {
   
 }
 /* responsive Design for-desktop-up*/
-@media (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
   
 }
 /* responsive Design for-big-desktop-up*/
-@media (min-width: 1800px) {
+@media screen and (min-width: 1800px) {
   
 }
 
