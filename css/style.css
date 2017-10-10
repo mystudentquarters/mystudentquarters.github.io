@@ -28,12 +28,22 @@ body {
 }
 
 .Background {
-  background-image: url(https://firebasestorage.googleapis.com/v0/b/my-student-quarters.appspot.com/o/MSQ%20Website%2FLanding%20page%20Photo.png?alt=media&token=b86a316b-6531-4ca8-a472-0b38c2ce8597);
+  background-image: url(https://firebasestorage.googleapis.com/v0/b/my-student-quarters.appspot.com/o/MSQ%20Website%2FWeb%20optimised%20photos%2Fbackground_website.jpg?alt=media&token=b746a084-aed4-43b7-947d-10728f3524e9);
   background-repeat: no-repeat;
   background-size: cover;
   /* background-position: center;
  background-attachment: fixed;*/
    
+  -webkit-background-size: cover; 
+  -moz-background-size: cover; 
+  -o-background-size: cover;
+}
+
+.Background-terms {
+  background-image: url(https://firebasestorage.googleapis.com/v0/b/my-student-quarters.appspot.com/o/MSQ%20Website%2FWeb%20optimised%20photos%2Fbackground_website.jpg?alt=media&token=b746a084-aed4-43b7-947d-10728f3524e9);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
   -webkit-background-size: cover; 
   -moz-background-size: cover; 
   -o-background-size: cover;
@@ -336,11 +346,14 @@ footer .right {
 .MSQ-what {
   display: flex;
   flex-flow: column nowrap;
-  padding: 2rem;
+  padding: 5rem 3rem;
+  margin: 5rem;
   align-items: center;
-  background-color: white;
-
+  background: white;
+  min-height: 25rem;
 }
+
+
 
 * {box-sizing:border-box}
         .mySlides {
@@ -354,8 +367,9 @@ footer .right {
           align-items: center;
           width: 100%;
           position: relative;
-          margin: auto;
+          margin: 1rem 1rem;
           min-height: 24rem;
+
           
 
 
@@ -390,11 +404,11 @@ footer .right {
         /* Caption text */
         .text {
           color: #323232;
-          padding: 0 1rem;
+          padding: 1rem;
           width: 100%;
           text-align: center;
           align-content: center;
-          margin: -3rem auto;
+          margin: auto;
         }
         .text h2 {
           margin-bottom: 2rem;
@@ -434,8 +448,23 @@ footer .right {
           to {opacity: 1}
         }
 
-        
+ 
+ /*Settings for the section "WHAT Mobile"*/       
+.MSQ-what-mobile {
+  display: none;
+  flex-flow: column nowrap;
+  max-width: 100%;
+  padding: 1rem;
+  align-items: center;
+  background-color: white;
+}
+ .MSQ-what-mobile h3 {
+      margin:  1% 0 1% 0;
+  }
 
+  .MSQ-what-mobile p {
+    text-align: center;
+  }
 
 /* settings to define the "Our Values" section */
 /* GRID 6 (auto)*/
@@ -858,6 +887,7 @@ html p {font-size: 12px;}
 }
 .title h1{
   font-size: 70px;
+  padding: 1rem;
 }
 
 header h5{
@@ -886,8 +916,13 @@ footer .right {
   flex-flow: wrap;
   width: 100%;
   justify-content: center;
-
 }
+
+.MSQ-what{
+  display: none;
+}
+
+
 
 .MSQ-values {
   padding: 1rem;
@@ -926,11 +961,73 @@ footer .right {
 
 .mySlides {
   padding: 1rem 0;
+  display: none;
  } 
 .slideshow-container {
+  display: none;
   padding: 3rem 0 2rem 0;
 
 }
+
+/* Hide WHAT desktop secton*/
+.MSQ-what {
+  display: none;
+
+}
+
+
+        .mySlides {
+          display: none;
+          
+        }
+
+        /* Slideshow container */
+        .slideshow-container {
+          display: none;
+
+        }
+
+        /* Next & previous buttons */
+        .prev, .next {
+          display: none;
+        }
+
+        /* Position the "next button" to the right */
+        .next {
+          display:none;
+        }
+
+        /* On hover, add a black background color with a little bit see-through */
+        .prev:hover, .next:hover {
+          display:none;
+        }
+
+        /* Caption text */
+        .text {
+          display:none;
+        }
+        .text h2 {
+          margin-bottom: 2rem;
+        }
+
+        /* The dots/bullets/indicators */
+        .dot {
+          display:none;
+        }
+
+        .active, .dot:hover {
+          display:none;
+        }
+
+        /* Fading animation */
+        .fade {
+          display:none;
+        }
+
+    .MSQ-what-mobile {
+  display: flex;
+}
+
 /* responsive Design for-tablet-portrait-up*/
 @media screen and (min-width: 600px) and (max-width: 899) {
   body {
@@ -953,15 +1050,27 @@ footer .right {
   padding: 3rem 0 2rem 0;
 
 }
+
+.MSQ-what-mobile {
+  display: none;
 }
-/* responsive Design for-tablet-landscape-up
+}
+/* responsive Design for-tablet-landscape-up*/
 @media screen and (min-width: 900px) {
-  
-}*/
-/* responsive Design for-desktop-up
+
+  .BounceArrow { 
+  display: block ;
+}
+  .MSQ-what-mobile {
+  display: none;
+}
+}
+/* responsive Design for-desktop-up */
 @media screen and (min-width: 1200px) {
-  
-}*/
+    .MSQ-what-mobile {
+  display: none;
+}
+}
 /* responsive Design for-big-desktop-up
 @media screen and (min-width: 1800px) {
   
