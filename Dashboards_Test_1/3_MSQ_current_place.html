@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+  <!-- settings and imports needed to make the website work. links to the 2 .css files used, links to the fonts used, and the name that will be displayed in the tab -->
+    <head>
+        <meta charset="UTF-8">
+        <!-- Responsive Design -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge,chrome=1">
+        <!-- import .css files -->
+        <!--<link rel="stylesheet" href="css/style.css"/> -->
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.4/css/uikit.almost-flat.min.css" />
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.4/css/components/sticky.almost-flat.min.css"/>
+        <link rel="stylesheet" type="text/css" href="https://getuikit.com/assets/uikit/dist/js/uikit-icons.js?nc=5319" />
+
+
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.4/js/uikit.min.js"></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.4/js/core/nav.min.js"></script>
+	
+
+
+        <!-- import fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Just+Me+Again+Down+Here|Lato:300|Lato:700|Cookie|Source+Sans+Pro|Walter+Turncoat" rel="stylesheet">
+        <!-- import social media icons -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+        <!-- favicon declarations -->
+        <link rel="shortcut icon" href="https://firebasestorage.googleapis.com/v0/b/my-student-quarters.appspot.com/o/MSQ%20Logos%2FLogo2_citrus_960x960.svg?alt=media&token=cdc6511e-df1c-4408-bc2b-1a1cb7c60425"/>
+        <link rel="icon" sizes="16x16 32x32 64x64" href="https://firebasestorage.googleapis.com/v0/b/my-student-quarters.appspot.com/o/MSQ%20Logos%2FLogo2_citrus_960x960.svg?alt=media&token=cdc6511e-df1c-4408-bc2b-1a1cb7c60425"/>
+
+
+      <!-- Apple App icons -->
+      <link rel="apple-touch-icon" href="https://firebasestorage.googleapis.com/v0/b/my-student-quarters.appspot.com/o/MSQ%20Logos%2FLogo2_citrus_960x960.png?alt=media&token=753e7107-9e9c-47d0-8e7c-7c1dffcf6579" />
+      <link rel="apple-touch-icon" sizes="76x76" href="https://firebasestorage.googleapis.com/v0/b/my-student-quarters.appspot.com/o/MSQ%20Logos%2FLogo2_citrus_960x960.png?alt=media&token=753e7107-9e9c-47d0-8e7c-7c1dffcf6579" />
+      <link rel="apple-touch-icon" sizes="120x120" href="https://firebasestorage.googleapis.com/v0/b/my-student-quarters.appspot.com/o/MSQ%20Logos%2FLogo2_citrus_960x960.png?alt=media&token=753e7107-9e9c-47d0-8e7c-7c1dffcf6579" />
+      <link rel="apple-touch-icon" sizes="152x152" href="https://firebasestorage.googleapis.com/v0/b/my-student-quarters.appspot.com/o/MSQ%20Logos%2FLogo2_citrus_960x960.png?alt=media&token=753e7107-9e9c-47d0-8e7c-7c1dffcf6579" />
+      <link rel="apple-touch-icon" sizes="180x180" href="https://firebasestorage.googleapis.com/v0/b/my-student-quarters.appspot.com/o/MSQ%20Logos%2FLogo2_citrus_960x960.png?alt=media&token=753e7107-9e9c-47d0-8e7c-7c1dffcf6579" />
+      <link rel="icon" sizes="192x192" href="https://firebasestorage.googleapis.com/v0/b/my-student-quarters.appspot.com/o/MSQ%20Logos%2FLogo2_citrus_960x960.png?alt=media&token=753e7107-9e9c-47d0-8e7c-7c1dffcf6579" />
+
+
+        <!-- Title of the tab -->
+        <title>My Student Quarters - My Current Place</title>
+    </head>
+
+    <body> 
+
+
+    <!-- Navbar -->
+<nav class="nav-placeholder">
+  <div id="nav">
+  <a href="#offcanvas" class="uk-navbar-toggle uk-hidden-large" data-uk-offcanvas></a>
+    <div class="uk-container uk-container-center">
+      <div class="uk-navbar-brand">
+        <a id="logo" href="">My Student Quarters</a>
+      </div>
+      <ul class="uk-navbar-nav uk-margin-large-left uk-hidden-medium uk-hidden-small">
+        <li class="uk-parent" data-uk-dropdown>
+          <a href="/"><i class="uk-icon-bars"></i> Browse</a>
+          <div class="uk-dropdown uk-dropdown-navbar uk-dropdown-width-4">
+            <div id="browse" class="uk-grid uk-dropdown-grid">
+            </div>
+          </div>
+        </li>
+      </ul>
+      <div class="uk-navbar-flip uk-hidden-small">
+        <ul class="uk-navbar-nav">
+          <li class="uk-parent" data-uk-dropdown>
+          <a href="/"><i class="uk-icon-bars"></i> Menu</a>
+          <div class="uk-dropdown uk-dropdown-navbar">
+                <div ><a href="/Dashboards_Test_1/1_dashboard_unecom"><i class="uk-icon-bars"></i> Dashboard</a></div>
+                <div ><a href="/Dashboards_Test_1/2_MSQ_student_profile"><i class="uk-icon-user"></i> Profile</a></div>
+                <div ><a href="/Dashboards_Test_1/2_MSQ_payments"><i class="uk-icon-credit-card"></i> Payments</a></div>
+                <div ><a href="/Dashboards_Test_1/3_MSQ_current_place"><i class="uk-icon-commenting"></i> Message</a></div>
+                <div ><a href="/Dashboards_Test_1/4_MSQ_messages"><i class="uk-icon-home"></i> My Place</a></div>
+                <div ><a href="/Dashboards_Test_1/6_MSQ_utilities"><i class="uk-icon-bolt"></i> Utilities</a></div>
+                <div ><a href="/Dashboards_Test_1/7_MSQ_lease"><i class="uk-icon-legal"></i> Lease</a></div>
+                <div ><a href="/Dashboards_Test_1/8_MSQ_help"><i class="uk-icon-question"></i> Help</a></div>
+          </div>
+        </li>
+        <li class="uk-margin-left"><a class="link-secondary" href="">Login</a></li>
+        <li><a class="link-secondary" href="">Sign up</a>
+        </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
+<!-- End Navbar -->
+
+      <div class="uk-container uk-container-center uk-margin-top">
+
+        <!-- Settings for the title -->
+        <h1 class="uk-text-center">MY CURRENT PLACE</h1>
+
+        <!-- Settings for the Section Past and Upcoming Payments -->
+
+        <section class="uk-section-muted uk-text-center">
+          <section class="uk-grid data-uk-grid-match">
+            <div class="uk-width-1-2">
+              <div class="uk-panel uk-panel-box uk-panel-box-secondary">
+                <a class="uk-thumbnail" href="">
+                  <img src="https://firebasestorage.googleapis.com/v0/b/my-student-quarters.appspot.com/o/MSQ%20Logos%2FLogo2_citrus_960x960.svg?alt=media&token=cdc6511e-df1c-4408-bc2b-1a1cb7c60425" alt="">
+                  <div class="uk-thumbnail-caption">Photos</div>
+              </a>
+                <h1 class="uk-panel-title">PLACE DETAILS</h1>
+                <p>Boston Street n2, Philadelphia</p>
+                <p>2 beed, 1 bathroom</p>
+              </div>
+
+
+
+            </div>
+            <div class="uk-width-1-2">
+              <div class="uk-panel uk-panel-box uk-panel-box-secondary">  
+                
+                
+                <button class="uk-button uk-button-primary uk-width-1-1" type="button" data-uk-button>Make a Complaint</button>
+                <p></p>
+                <button class="uk-button uk-button-primary uk-width-1-1" type="button" data-uk-button>View/Upload Photos</button>
+                <p></p>
+                <button class="uk-button uk-button-primary uk-width-1-1" type="button" data-uk-button>Current Roomates</button>
+              </div>
+            </div>
+          </section>
+        </section>
+
+        <!-- Settings for the Section My Next Place -->
+
+        <section class="uk-section-muted uk-text-center ">
+          <section class="uk-grid data-uk-grid-match">
+            <div class="uk-width-1-2">
+              <div class="uk-panel uk-panel-box uk-panel-box-secondary uk-panel-header">
+                <i class="uk-icon-home uk-icon-large"></i>
+                <h1 class="uk-panel-title">MY NEXT PLACE</h1>
+                <div class="uk-container uk-container-center uk-container-margin">
+                  <div class="uk-grid">
+                    <div class="uk-width-1-1">
+                      <div class="uk-grid featured-hover" data-uk-grid-margin>
+                        <div class="uk-width-1-2">
+                          <div class="featured-apartment">
+                            <div class="featured-header uk-nbfc">
+                              <p class="uk-float-right">
+                              <i class="uk-icon-star"></i> <i class="uk-icon-star"></i> <i class="uk-icon-star"></i> <i class="uk-icon-star-o"></i> <i class="uk-icon-star-o"></i> </p>
+                            </div>
+                            <div class="featured-image">
+                              <a href="/uk/london/borough-empire-apartments" title="Borough Empire Apartments" class="lazyparent">
+                                <img class="lazyload" data-src="https://firebasestorage.googleapis.com/v0/b/my-student-quarters.appspot.com/o/MSQ%20Logos%2FLogo2_citrus_960x960.svg?alt=media&token=cdc6511e-df1c-4408-bc2b-1a1cb7c60425" height="138" />
+                              </a>
+                            </div>
+                            <div class="featured-info">
+                              <h3 class="uk-text-center">
+                                <a href="/uk/london/borough-empire-apartments" title="Explore this apartment">Borough Empire Apartments</a>
+                              </h3>
+
+                              <p class="featured-rates aqua uk-text-center">from <span class="currency" data-code="GBP">&#163;120.00</span></p>
+
+                              <a href="/uk/london/borough-empire-apartments" title="Explore this apartment" class="uk-button uk-button-large uk-width-1-1 crimson-bg featured-book">View apartment</a>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="uk-width-1-2">
+                          <div class="featured-apartment">
+                            <div class="featured-header uk-nbfc">
+                              <p class="uk-float-right">
+                              <i class="uk-icon-star"></i> <i class="uk-icon-star"></i> <i class="uk-icon-star"></i> <i class="uk-icon-star"></i> <i class="uk-icon-star-o"></i> </p>
+                            </div>
+                            <div class="featured-image">
+                              <a href="/uk/london/fraser-place-queens-gate" title="Fraser Suites Queens Gate" class="lazyparent">
+                                <img class="lazyload" data-src="https://images.worldviewlimited.com/1228/main/400x267/crop" height="138" />
+                              </a>
+                            </div>
+                            <div class="featured-info">
+                              <h3 class="uk-text-center">
+                                <a href="/uk/london/fraser-place-queens-gate" title="Explore this apartment">Fraser Suites Queens Gate</a>
+                              </h3>
+                              <p class="featured-rates aqua uk-text-center">from <span class="currency" data-code="GBP">&#163;145.80</span></p>
+                              <a href="/uk/london/fraser-place-queens-gate" title="Explore this apartment" class="uk-button uk-button-large uk-width-1-1 crimson-bg featured-book">View apartment</a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="uk-width-1-2">
+                          <div class="featured-apartment">
+                            <div class="featured-header uk-nbfc">
+                              <p class="uk-float-right">
+                              <i class="uk-icon-star"></i> <i class="uk-icon-star"></i> <i class="uk-icon-star"></i> <i class="uk-icon-star-o"></i> <i class="uk-icon-star-o"></i> </p>
+                            </div>
+                            <div class="featured-image">
+                              <a href="/uk/london/city-docks-apartments" title="City Docks Apartments" class="lazyparent">
+                                <img class="lazyload" data-src="https://images.worldviewlimited.com/4612/main/400x267/crop" height="138" />
+                              </a>
+                            </div>
+                            <div class="featured-info">
+                              <h3 class="uk-text-center">
+                                <a href="/uk/london/city-docks-apartments" title="Explore this apartment">City Docks Apartments</a>
+                              </h3>
+                              <p class="featured-rates aqua uk-text-center">from <span class="currency" data-code="GBP">&#163;142.00</span></p>
+                              <a href="/uk/london/city-docks-apartments" title="Explore this apartment" class="uk-button uk-button-large uk-width-1-1 crimson-bg featured-book">View apartment</a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="uk-width-1-2">
+                          <div class="featured-apartment">
+                            <div class="featured-header uk-nbfc">
+                              <p class="uk-float-right">
+                              <i class="uk-icon-star"></i> <i class="uk-icon-star"></i> <i class="uk-icon-star"></i> <i class="uk-icon-star-o"></i> <i class="uk-icon-star-o"></i> </p>
+                            </div>
+                            <div class="featured-image">
+                              <a href="/uk/london/limehouse-2b-apartments" title="Limehouse 2B Apartments" class="lazyparent">
+                              <img class="lazyload" data-src="https://images.worldviewlimited.com/4360/main/400x267/crop" height="138" />
+                              </a>
+                            </div>
+                            <div class="featured-info">
+                              <h3 class="uk-text-center">
+                              <a href="/uk/london/limehouse-2b-apartments" title="Explore this apartment">Limehouse 2B Apartments</a>
+                              </h3>
+                              <p class="featured-rates aqua uk-text-center">from <span class="currency" data-code="GBP">&#163;142.00</span></p>
+                              <a href="/uk/london/limehouse-2b-apartments" title="Explore this apartment" class="uk-button uk-button-large uk-width-1-1 crimson-bg featured-book">View apartment</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>  
+
+            <!-- Settings for the Section Favorites -->
+            <div class="uk-width-1-2">
+              <div class="uk-panel uk-panel-box uk-panel-box-secondary uk-panel-header">
+                <i class="uk-icon-heart uk-icon-large"></i>
+                <h1 class="uk-panel-title">FAVORITES</h1>
+                <div class="uk-container uk-container-center uk-container-margin">
+                  <div class="uk-grid">
+                    <div class="uk-width-1-1">
+                      <div class="uk-grid featured-hover" data-uk-grid-margin>
+                        <div class="uk-width-1-2">
+                          <div class="featured-apartment">
+                            <div class="featured-header uk-nbfc">
+                              <p class="uk-float-right">
+                              <i class="uk-icon-star"></i> <i class="uk-icon-star"></i> <i class="uk-icon-star"></i> <i class="uk-icon-star-o"></i> <i class="uk-icon-star-o"></i> </p>
+                            </div>
+                            <div class="featured-image">
+                              <a href="/uk/london/borough-empire-apartments" title="Borough Empire Apartments" class="lazyparent">
+                                <img class="lazyload" data-src="https://firebasestorage.googleapis.com/v0/b/my-student-quarters.appspot.com/o/MSQ%20Logos%2FLogo2_citrus_960x960.svg?alt=media&token=cdc6511e-df1c-4408-bc2b-1a1cb7c60425" height="138" />
+                              </a>
+                            </div>
+                            <div class="featured-info">
+                              <h3 class="uk-text-center">
+                                <a href="/uk/london/borough-empire-apartments" title="Explore this apartment">Borough Empire Apartments</a>
+                              </h3>
+
+                              <p class="featured-rates aqua uk-text-center">from <span class="currency" data-code="GBP">&#163;120.00</span></p>
+
+                              <a href="/uk/london/borough-empire-apartments" title="Explore this apartment" class="uk-button uk-button-large uk-width-1-1 crimson-bg featured-book">View apartment</a>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="uk-width-1-2">
+                          <div class="featured-apartment">
+                            <div class="featured-header uk-nbfc">
+                              <p class="uk-float-right">
+                              <i class="uk-icon-star"></i> <i class="uk-icon-star"></i> <i class="uk-icon-star"></i> <i class="uk-icon-star"></i> <i class="uk-icon-star-o"></i> </p>
+                            </div>
+                            <div class="featured-image">
+                              <a href="/uk/london/fraser-place-queens-gate" title="Fraser Suites Queens Gate" class="lazyparent">
+                                <img class="lazyload" data-src="https://images.worldviewlimited.com/1228/main/400x267/crop" height="138" />
+                              </a>
+                            </div>
+                            <div class="featured-info">
+                              <h3 class="uk-text-center">
+                                <a href="/uk/london/fraser-place-queens-gate" title="Explore this apartment">Fraser Suites Queens Gate</a>
+                              </h3>
+                              <p class="featured-rates aqua uk-text-center">from <span class="currency" data-code="GBP">&#163;145.80</span></p>
+                              <a href="/uk/london/fraser-place-queens-gate" title="Explore this apartment" class="uk-button uk-button-large uk-width-1-1 crimson-bg featured-book">View apartment</a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="uk-width-1-2">
+                          <div class="featured-apartment">
+                            <div class="featured-header uk-nbfc">
+                              <p class="uk-float-right">
+                              <i class="uk-icon-star"></i> <i class="uk-icon-star"></i> <i class="uk-icon-star"></i> <i class="uk-icon-star-o"></i> <i class="uk-icon-star-o"></i> </p>
+                            </div>
+                            <div class="featured-image">
+                              <a href="/uk/london/city-docks-apartments" title="City Docks Apartments" class="lazyparent">
+                                <img class="lazyload" data-src="https://images.worldviewlimited.com/4612/main/400x267/crop" height="138" />
+                              </a>
+                            </div>
+                            <div class="featured-info">
+                              <h3 class="uk-text-center">
+                                <a href="/uk/london/city-docks-apartments" title="Explore this apartment">City Docks Apartments</a>
+                              </h3>
+                              <p class="featured-rates aqua uk-text-center">from <span class="currency" data-code="GBP">&#163;142.00</span></p>
+                              <a href="/uk/london/city-docks-apartments" title="Explore this apartment" class="uk-button uk-button-large uk-width-1-1 crimson-bg featured-book">View apartment</a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="uk-width-1-2">
+                          <div class="featured-apartment">
+                            <div class="featured-header uk-nbfc">
+                              <p class="uk-float-right">
+                              <i class="uk-icon-star"></i> <i class="uk-icon-star"></i> <i class="uk-icon-star"></i> <i class="uk-icon-star-o"></i> <i class="uk-icon-star-o"></i> </p>
+                            </div>
+                            <div class="featured-image">
+                              <a href="/uk/london/limehouse-2b-apartments" title="Limehouse 2B Apartments" class="lazyparent">
+                              <img class="lazyload" data-src="https://images.worldviewlimited.com/4360/main/400x267/crop" height="138" />
+                              </a>
+                            </div>
+                            <div class="featured-info">
+                              <h3 class="uk-text-center">
+                              <a href="/uk/london/limehouse-2b-apartments" title="Explore this apartment">Limehouse 2B Apartments</a>
+                              </h3>
+                              <p class="featured-rates aqua uk-text-center">from <span class="currency" data-code="GBP">&#163;142.00</span></p>
+                              <a href="/uk/london/limehouse-2b-apartments" title="Explore this apartment" class="uk-button uk-button-large uk-width-1-1 crimson-bg featured-book">View apartment</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div> 
+
+
+          </section>
+         </section> 
+        
+
+        
+
+        
+          
+            
+        
+
+
+
+        </div>
+    </body>
+</html>
