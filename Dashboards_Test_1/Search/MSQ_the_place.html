@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+  <!-- settings and imports needed to make the website work. links to the 2 .css files used, links to the fonts used, and the name that will be displayed in the tab -->
+    <head>
+        <meta charset="UTF-8">
+        <!-- Responsive Design -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge,chrome=1">
+        <!-- import .css files -->
+        <!--<link rel="stylesheet" href="css/style.css"/> -->
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.4/css/uikit.almost-flat.min.css" />
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.4/css/components/sticky.almost-flat.min.css"/>
+        <link rel="stylesheet" type="text/css" href="https://getuikit.com/assets/uikit/dist/js/uikit-icons.js?nc=5319" />
+
+
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.4/js/uikit.min.js"></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.4/js/core/nav.min.js"></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.4/css/components/notify.min.css"></script>
+
+
+        <!-- import fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Just+Me+Again+Down+Here|Lato:300|Lato:700|Cookie|Source+Sans+Pro|Walter+Turncoat" rel="stylesheet">
+        <!-- import social media icons -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+        <!-- favicon declarations -->
+        <link rel="shortcut icon" href="https://firebasestorage.googleapis.com/v0/b/my-student-quarters.appspot.com/o/MSQ%20Logos%2FLogo2_citrus_960x960.svg?alt=media&token=cdc6511e-df1c-4408-bc2b-1a1cb7c60425"/>
+        <link rel="icon" sizes="16x16 32x32 64x64" href="https://firebasestorage.googleapis.com/v0/b/my-student-quarters.appspot.com/o/MSQ%20Logos%2FLogo2_citrus_960x960.svg?alt=media&token=cdc6511e-df1c-4408-bc2b-1a1cb7c60425"/>
+
+
+      <!-- Apple App icons -->
+      <link rel="apple-touch-icon" href="https://firebasestorage.googleapis.com/v0/b/my-student-quarters.appspot.com/o/MSQ%20Logos%2FLogo2_citrus_960x960.png?alt=media&token=753e7107-9e9c-47d0-8e7c-7c1dffcf6579" />
+      <link rel="apple-touch-icon" sizes="76x76" href="https://firebasestorage.googleapis.com/v0/b/my-student-quarters.appspot.com/o/MSQ%20Logos%2FLogo2_citrus_960x960.png?alt=media&token=753e7107-9e9c-47d0-8e7c-7c1dffcf6579" />
+      <link rel="apple-touch-icon" sizes="120x120" href="https://firebasestorage.googleapis.com/v0/b/my-student-quarters.appspot.com/o/MSQ%20Logos%2FLogo2_citrus_960x960.png?alt=media&token=753e7107-9e9c-47d0-8e7c-7c1dffcf6579" />
+      <link rel="apple-touch-icon" sizes="152x152" href="https://firebasestorage.googleapis.com/v0/b/my-student-quarters.appspot.com/o/MSQ%20Logos%2FLogo2_citrus_960x960.png?alt=media&token=753e7107-9e9c-47d0-8e7c-7c1dffcf6579" />
+      <link rel="apple-touch-icon" sizes="180x180" href="https://firebasestorage.googleapis.com/v0/b/my-student-quarters.appspot.com/o/MSQ%20Logos%2FLogo2_citrus_960x960.png?alt=media&token=753e7107-9e9c-47d0-8e7c-7c1dffcf6579" />
+      <link rel="icon" sizes="192x192" href="https://firebasestorage.googleapis.com/v0/b/my-student-quarters.appspot.com/o/MSQ%20Logos%2FLogo2_citrus_960x960.png?alt=media&token=753e7107-9e9c-47d0-8e7c-7c1dffcf6579" />
+
+
+        <!-- Title of the tab -->
+        <title>My Student Quarters - The Flat</title>
+    </head>
+
+
+
+    <body> 
+
+          
+
+      
+<!-- Navbar -->
+<nav class="nav-placeholder">
+  <div id="nav">
+  <a href="#offcanvas" class="uk-navbar-toggle uk-hidden-large" data-uk-offcanvas></a>
+    <div class="uk-container uk-container-center">
+      <div class="uk-navbar-brand">
+      <a class="uk-logo" href="/Dashboards_Test_1/MSQ_dashboard_unecom">
+    <img src="https://firebasestorage.googleapis.com/v0/b/my-student-quarters.appspot.com/o/MSQ%20Logos%2FLogo2_citrus_960x960.svg?alt=media&token=cdc6511e-df1c-4408-bc2b-1a1cb7c60425" width="64px" alt=""> My Student Quarters</a>
+      </div>
+      <ul class="uk-navbar-nav uk-margin-large-left uk-hidden-medium uk-hidden-small">
+        <li class="uk-parent" data-uk-dropdown>
+          <a href="/"><i class="uk-icon-bars"></i> Find a...</a>
+          <div class="uk-dropdown uk-dropdown-navbar">
+            <div id="browse" class="uk-grid uk-dropdown-grid">
+              <div ><a href="/Dashboards_Test_1/Search/MSQ_find_a_place"><i class="uk-icon-home"></i> Find a Place</a></div>
+              <div ><a href="/Dashboards_Test_1/Search/MSQ_find_a_roomate"><i class="uk-icon-users"></i> Find a Roomate</a></div>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <div class="uk-navbar-flip uk-hidden-small">
+        <ul class="uk-navbar-nav">
+          <li class="uk-parent" data-uk-dropdown>
+          <a href=""><i class="uk-icon-bars"></i> Student Menu</a>
+          <div class="uk-dropdown uk-dropdown-navbar">
+                <div ><a href="/Dashboards_Test_1/Student/MSQ_student_dashoard"><i class="uk-icon-bank"></i> Dashboard</a></div>
+                <div ><a href="/Dashboards_Test_1/Student/MSQ_student_profile"><i class="uk-icon-user"></i> Profile</a></div>
+                <div ><a href="/Dashboards_Test_1/Student/MSQ_student_payments"><i class="uk-icon-credit-card"></i> Payments</a></div>
+                <div ><a href="/Dashboards_Test_1/Student/MSQ_student_messages"><i class="uk-icon-commenting"></i> Messages</a></div>
+                <div ><a href="/Dashboards_Test_1/Student/MSQ_student_current_place"><i class="uk-icon-home"></i> My Place</a></div>
+                <div ><a href="/Dashboards_Test_1/Student/MSQ_student_utilities"><i class="uk-icon-bolt"></i> Utilities</a></div>
+                <div ><a href="/Dashboards_Test_1/Student/MSQ_student_lease"><i class="uk-icon-legal"></i> Lease</a></div>
+                <div ><a href="/Dashboards_Test_1/Student/MSQ_student_help"><i class="uk-icon-question"></i> Help</a></div>
+          </div>
+
+        </li>
+        <li class="uk-parent" data-uk-dropdown>
+          <a href=""><i class="uk-icon-bars"></i> Landlord Menu</a>
+          <div class="uk-dropdown uk-dropdown-navbar">
+                <div ><a href="/Dashboards_Test_1/Landlord/MSQ_landlord_dashoard"><i class="uk-icon-bank"></i> Dashboard</a></div>
+                <div ><a href="/Dashboards_Test_1/Landlord/MSQ_landlord_collections"><i class="uk-icon-clipboard"></i> Collections</a></div>
+                <div ><a href="/Dashboards_Test_1/Landlord/MSQ_landlord_leads"><i class="uk-icon-credit-users"></i> Leads</a></div>
+                <div ><a href="/Dashboards_Test_1/Landlord/MSQ_landlord_rentals"><i class="uk-icon-home"></i> Rentals</a></div>
+                <div ><a href="/Dashboards_Test_1/Landlord/MSQ_landlord_agreements"><i class="uk-icon-file-o"></i> Agreements</a></div>
+                <div ><a href="/Dashboards_Test_1/Landlord/MSQ_landlord_messages"><i class="uk-icon-commenting"></i> Messages</a></div>
+                <div ><a href="/Dashboards_Test_1/Landlord/MSQ_landlord_help"><i class="uk-icon-question"></i> Help</a></div>
+          </div>
+          
+        </li>
+        <li class="uk-margin-left"><a class="link-secondary" href="">Login</a></li>
+        <li><a class="link-secondary" href="">Sign up</a>
+        </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
+<!-- End Navbar -->
+
+
+        <!-- Settings for the title -->
+        <h1 class="uk-text-center">THE FLAT</h1>
+
+
+        <!-- Settings for the Section My next place -->
+        <section class="uk-section-muted uk-text-center ">
+          <section class="uk-grid data-uk-grid-match">
+            <!-- Settings for the Main Left photo -->
+            <div class="uk-width-1-3">
+                <div class="uk-container uk-container-center uk-container-margin">
+                    <div class="uk-thumbnail uk-thumbnail-expand"><img src="https://firebasestorage.googleapis.com/v0/b/my-student-quarters.appspot.com/o/MSQ_Jess_flat%2FMy-Students-Quarters-1.jpg?alt=media&token=ea2885ca-4b13-4e69-a6f2-168e1e9dc069" alt=""></div>
+                </div>
+            </div>
+            <!-- Settings for the Middle Section Photos -->
+            <div class="uk-width-1-3">
+              <div class="uk-panel uk-panel-box uk-panel-box-secondary">
+                <div class="uk-container uk-container-center uk-container-margin">
+                  <div class="uk-grid">
+                    <div class="uk-width-1-1">
+                      <div class="uk-grid featured-hover" data-uk-grid-margin>
+                        <div class="uk-width-1-1">
+                          <div class="featured-apartment">
+                            <div class="featured-image">
+                              <a href="" title="Borough Empire Apartments" class="lazyparent">
+                                <img src="https://firebasestorage.googleapis.com/v0/b/my-student-quarters.appspot.com/o/MSQ_Jess_flat%2FMy-Students-Quarters-1.jpg?alt=media&token=ea2885ca-4b13-4e69-a6f2-168e1e9dc069" height="64" />
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="uk-width-1-1">
+                          <div class="featured-apartment">
+                            <div class="featured-image">
+                              <a href="" title="Fraser Suites Queens Gate" class="lazyparent">
+                                <img src="https://firebasestorage.googleapis.com/v0/b/my-student-quarters.appspot.com/o/MSQ_Jess_flat%2FMy-Students-Quarters-10.jpg?alt=media&token=d023f773-118a-44a8-bfb1-9030e3f11f6d" height="138" />
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="uk-width-1-1">
+                          <div class="featured-apartment">
+                            <div class="featured-image">
+                              <a href="" title="City Docks Apartments" class="lazyparent">
+                                <img src="https://firebasestorage.googleapis.com/v0/b/my-student-quarters.appspot.com/o/MSQ_Jess_flat%2FMy-Students-Quarters-11.jpg?alt=media&token=d4d5f8df-b555-4caf-8ebc-4786bb5703eb" height="138" />
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="uk-width-1-1">
+                          <div class="featured-apartment">
+                            <div class="featured-image">
+                              <a href="" title="Limehouse 2B Apartments" class="lazyparent">
+                              <img src="https://firebasestorage.googleapis.com/v0/b/my-student-quarters.appspot.com/o/MSQ_Jess_flat%2FMy-Students-Quarters-12.jpg?alt=media&token=8012f77d-87b5-4308-b5b8-16431a3391d4" height="138" />
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>  
+
+            <!-- Settings for the Section MAP -->
+            <div class="uk-width-1-3">
+                <div class="uk-container uk-container-center uk-container-margin">
+                    <div class="uk-thumbnail uk-thumbnail-expand"><img src="https://firebasestorage.googleapis.com/v0/b/my-student-quarters.appspot.com/o/MSQ%20Website%2Fmap_temple.png?alt=media&token=ab3fa92b-8b3d-496e-ae07-bae6013f101b" alt=""></div>
+                </div>
+            </div>
+          </section>
+         </section> 
+
+        <!-- Settings for the Info Bar -->
+        <section class="uk-section-muted uk-text-center ">
+          <section class="uk-grid data-uk-grid-match">
+            <div class="uk-width-2-3">
+                <div class="uk-panel uk-panel-box uk-panel-box-secondary uk-panel-header">
+                    <div class="uk-container uk-container-center uk-container-margin">
+                        <div class="uk-flex uk-flex-row uk-flex-space-between">
+                            <p>VERIFIED</p>
+                            <p>Double Bedroom</p>
+                            <p>1 person</p>
+                            <p>3-bedroom appartment</p>
+                            <p>2 Bathrooms</p>
+                        </div>    
+                    </div>
+                </div>
+            </div>
+          </section>
+        </section>
+
+        <!-- Settings for the Book Bar -->
+        <section class="uk-section-muted uk-text-center ">
+          <section class="uk-grid data-uk-grid-match">
+            <div class="uk-width-1-1">
+                <div class="uk-panel uk-panel-box uk-panel-box-secondary uk-panel-header">
+                    <div class="uk-container uk-container-center uk-container-margin">
+                        <div class="uk-flex uk-flex-row uk-flex-space-between">
+                            <p>Available from September 1st, 2017</p>
+                            <p>$500 / month</p>
+                            <p>All Bills Included</p>
+                            <button class="uk-button uk-button-primary" type="button" data-uk-button>Check Availability</button>
+                        </div>    
+                    </div>
+                </div>
+            </div>
+          </section>
+        </section>
+
+        </div>
+    </body>
+</html>

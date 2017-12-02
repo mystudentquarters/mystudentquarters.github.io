@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+  <!-- settings and imports needed to make the website work. links to the 2 .css files used, links to the fonts used, and the name that will be displayed in the tab -->
+    <head>
+        <meta charset="UTF-8">
+        <!-- Responsive Design -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge,chrome=1">
+        <!-- import .css files -->
+        <!--<link rel="stylesheet" href="css/style.css"/> -->
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.4/css/uikit.almost-flat.min.css" />
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.4/css/components/sticky.almost-flat.min.css"/>
+        <link rel="stylesheet" type="text/css" href="https://getuikit.com/assets/uikit/dist/js/uikit-icons.js?nc=5319" />
+
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.4/js/uikit.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.4/js/core/nav.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.4/css/components/notify.min.css"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.4/css/components/accordion.min.css"></script>
+
+
+        <!-- import fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Just+Me+Again+Down+Here|Lato:300|Lato:700|Cookie|Source+Sans+Pro|Walter+Turncoat" rel="stylesheet">
+        <!-- import social media icons -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+        <!-- favicon declarations -->
+        <link rel="shortcut icon" href="https://firebasestorage.googleapis.com/v0/b/my-student-quarters.appspot.com/o/MSQ%20Logos%2FLogo2_citrus_960x960.svg?alt=media&token=cdc6511e-df1c-4408-bc2b-1a1cb7c60425"/>
+        <link rel="icon" sizes="16x16 32x32 64x64" href="https://firebasestorage.googleapis.com/v0/b/my-student-quarters.appspot.com/o/MSQ%20Logos%2FLogo2_citrus_960x960.svg?alt=media&token=cdc6511e-df1c-4408-bc2b-1a1cb7c60425"/>
+
+
+      <!-- Apple App icons -->
+      <link rel="apple-touch-icon" href="https://firebasestorage.googleapis.com/v0/b/my-student-quarters.appspot.com/o/MSQ%20Logos%2FLogo2_citrus_960x960.png?alt=media&token=753e7107-9e9c-47d0-8e7c-7c1dffcf6579" />
+      <link rel="apple-touch-icon" sizes="76x76" href="https://firebasestorage.googleapis.com/v0/b/my-student-quarters.appspot.com/o/MSQ%20Logos%2FLogo2_citrus_960x960.png?alt=media&token=753e7107-9e9c-47d0-8e7c-7c1dffcf6579" />
+      <link rel="apple-touch-icon" sizes="120x120" href="https://firebasestorage.googleapis.com/v0/b/my-student-quarters.appspot.com/o/MSQ%20Logos%2FLogo2_citrus_960x960.png?alt=media&token=753e7107-9e9c-47d0-8e7c-7c1dffcf6579" />
+      <link rel="apple-touch-icon" sizes="152x152" href="https://firebasestorage.googleapis.com/v0/b/my-student-quarters.appspot.com/o/MSQ%20Logos%2FLogo2_citrus_960x960.png?alt=media&token=753e7107-9e9c-47d0-8e7c-7c1dffcf6579" />
+      <link rel="apple-touch-icon" sizes="180x180" href="https://firebasestorage.googleapis.com/v0/b/my-student-quarters.appspot.com/o/MSQ%20Logos%2FLogo2_citrus_960x960.png?alt=media&token=753e7107-9e9c-47d0-8e7c-7c1dffcf6579" />
+      <link rel="icon" sizes="192x192" href="https://firebasestorage.googleapis.com/v0/b/my-student-quarters.appspot.com/o/MSQ%20Logos%2FLogo2_citrus_960x960.png?alt=media&token=753e7107-9e9c-47d0-8e7c-7c1dffcf6579" />
+
+
+        <!-- Title of the tab -->
+        <title>My Student Quarters - Student Messages</title>
+    </head>
+
+
+
+    <body> 
+
+          
+
+      
+<!-- Navbar -->
+<nav class="nav-placeholder">
+  <div id="nav">
+  <a href="#offcanvas" class="uk-navbar-toggle uk-hidden-large" data-uk-offcanvas></a>
+    <div class="uk-container uk-container-center">
+      <div class="uk-navbar-brand">
+      <a class="uk-logo" href="/Dashboards_Test_1/MSQ_dashboard_unecom">
+    <img src="https://firebasestorage.googleapis.com/v0/b/my-student-quarters.appspot.com/o/MSQ%20Logos%2FLogo2_citrus_960x960.svg?alt=media&token=cdc6511e-df1c-4408-bc2b-1a1cb7c60425" width="64px" alt=""> My Student Quarters</a>
+      </div>
+      <ul class="uk-navbar-nav uk-margin-large-left uk-hidden-medium uk-hidden-small">
+        <li class="uk-parent" data-uk-dropdown>
+          <a href="/"><i class="uk-icon-bars"></i> Find a...</a>
+          <div class="uk-dropdown uk-dropdown-navbar">
+            <div id="browse" class="uk-grid uk-dropdown-grid">
+              <div ><a href="/Dashboards_Test_1/Search/MSQ_find_a_place"><i class="uk-icon-home"></i> Find a Place</a></div>
+              <div ><a href="/Dashboards_Test_1/Search/MSQ_find_a_roomate"><i class="uk-icon-users"></i> Find a Roomate</a></div>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <div class="uk-navbar-flip uk-hidden-small">
+        <ul class="uk-navbar-nav">
+          <li class="uk-parent" data-uk-dropdown>
+          <a href=""><i class="uk-icon-bars"></i> Student Menu</a>
+          <div class="uk-dropdown uk-dropdown-navbar">
+                <div ><a href="/Dashboards_Test_1/Student/MSQ_student_dashoard"><i class="uk-icon-bank"></i> Dashboard</a></div>
+                <div ><a href="/Dashboards_Test_1/Student/MSQ_student_profile"><i class="uk-icon-user"></i> Profile</a></div>
+                <div ><a href="/Dashboards_Test_1/Student/MSQ_student_payments"><i class="uk-icon-credit-card"></i> Payments</a></div>
+                <div ><a href="/Dashboards_Test_1/Student/MSQ_student_messages"><i class="uk-icon-commenting"></i> Messages</a></div>
+                <div ><a href="/Dashboards_Test_1/Student/MSQ_student_current_place"><i class="uk-icon-home"></i> My Place</a></div>
+                <div ><a href="/Dashboards_Test_1/Student/MSQ_student_utilities"><i class="uk-icon-bolt"></i> Utilities</a></div>
+                <div ><a href="/Dashboards_Test_1/Student/MSQ_student_lease"><i class="uk-icon-legal"></i> Lease</a></div>
+                <div ><a href="/Dashboards_Test_1/Student/MSQ_student_help"><i class="uk-icon-question"></i> Help</a></div>
+          </div>
+
+        </li>
+        <li class="uk-parent" data-uk-dropdown>
+          <a href=""><i class="uk-icon-bars"></i> Landlord Menu</a>
+          <div class="uk-dropdown uk-dropdown-navbar">
+                <div ><a href="/Dashboards_Test_1/Landlord/MSQ_landlord_dashoard"><i class="uk-icon-bank"></i> Dashboard</a></div>
+                <div ><a href="/Dashboards_Test_1/Landlord/MSQ_landlord_collections"><i class="uk-icon-clipboard"></i> Collections</a></div>
+                <div ><a href="/Dashboards_Test_1/Landlord/MSQ_landlord_leads"><i class="uk-icon-credit-users"></i> Leads</a></div>
+                <div ><a href="/Dashboards_Test_1/Landlord/MSQ_landlord_rentals"><i class="uk-icon-home"></i> Rentals</a></div>
+                <div ><a href="/Dashboards_Test_1/Landlord/MSQ_landlord_agreements"><i class="uk-icon-file-o"></i> Agreements</a></div>
+                <div ><a href="/Dashboards_Test_1/Landlord/MSQ_landlord_messages"><i class="uk-icon-commenting"></i> Messages</a></div>
+                <div ><a href="/Dashboards_Test_1/Landlord/MSQ_landlord_help"><i class="uk-icon-question"></i> Help</a></div>
+          </div>
+          
+        </li>
+        <li class="uk-margin-left"><a class="link-secondary" href="">Login</a></li>
+        <li><a class="link-secondary" href="">Sign up</a>
+        </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
+<!-- End Navbar -->
+
+      <div class="uk-container uk-container-center uk-margin-top">
+
+        <!-- Settings for the title -->
+        <h1 class="uk-text-center">STUDENT MESSAGES</h1>
+
+<!-- Settings for the Grid -->
+
+        <section class="uk-section-muted uk-text-center">
+          <section class="uk-grid data-uk-grid-match">
+
+
+        <!-- Settings for the History Section-->
+
+    <div class="uk-grid">  
+    
+        <!-- Settings for the Message Section-->
+
+        <div class="uk-width-2-3 uk-form-width-1-1">        
+        <div class="uk-panel uk-panel-box uk-panel-header uk-panel-box-primary">
+
+            <h2 class="uk-panel-title"><i class="fa fa-envelope-o"></i> Send a Message to your Landlord</h2>
+            
+            <form id="contact-form" class="uk-form uk-form-stacked" action="/help#contact-form" method="post">
+
+                <fieldset>
+
+                    <div class="uk-form-row">
+                        <label class="uk-form-label" for="inputEmail"><span class="crimson">*</span> Subject</label>
+                        <div class="uk-form-controls uk-grid">
+                            <div class="uk-width-1-1">
+                                <input type="text" name="name" id="inputFirstName" placeholder="" class="required uk-width-1-1" value="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="uk-form-row">
+                        <label class="uk-form-label" for="inputDetails"><span class="crimson">*</span> Message</label>
+                        <div class="uk-form-controls uk-grid">
+                            <div class="uk-width-1-1">
+                                <textarea rows="4" class="required uk-width-1-1" name="enquiry" id="inputDetails" placeholder="Please enter your message details"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <label><input type="checkbox"> Send a copy to my email</label
+                    <div class="uk-form-row">
+                        <div class="uk-form-controls uk-text-right">
+                            <input type="hidden" name="submit" value="1">
+                            <input type="submit" class="uk-form-large uk-button uk-button-primary crimson-bg" value="Send Message" />
+                            <input type="hidden" name="email" value="" />
+                        </div>
+                    </div>
+
+                </fieldset>
+
+            </form>
+
+        </div>
+      
+
+        <div class="uk-width-1-3 uk-form-width-1-1">
+            <div class="uk-panel uk-panel-box uk-panel-header uk-panel-box-primary">
+                <h2 class="uk-panel-title"><i class="uk-icon-warning"></i> Report an important complaint</h2>
+
+              <form method="post" action="" class="uk-form uk-form-stacked call-me-back">
+                <fieldset>
+                  <div class="uk-form-row">
+                      <label class="uk-form-label" for="inputDetails"><span class="crimson">*</span> Message</label>
+                      <div class="uk-form-controls uk-grid">
+                        <div class="uk-width-1-1">
+                          <textarea rows="4" class="required uk-width-1-1" name="enquiry" id="inputDetails" placeholder="(Oh nooo! The dryer's broken!)"></textarea>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="uk-form-row uk-text-right">
+                      <input type="submit" name="form-submit" class="uk-button uk-button-primary uk-form-large crimson-bg" value="Report" id="send-callback" />
+                      <input type="hidden" name="email"  value="" />
+                  </div>
+                </fieldset>
+              </form>
+
+            </div>
+        </div>
+
+      
+        <div class="uk-width-1-1 uk-form-width-1-1">
+            <div class="uk-panel uk-panel-box uk-panel-header uk-panel-box-primary">
+                <h2 class="uk-panel-title">Past Messages</h2>
+
+              <form method="post" action="" class="uk-form uk-form-stacked uk-form-horizontal">
+                <fieldset>
+                  <div class="uk-form-row">
+                      <label class="uk-form-label" for="inputDetails"><i class="uk-icon-user"></i> Landlord</label>
+                      <div class="uk-form-controls uk-grid">
+                        <div class="uk-width-1-1">
+                          <textarea rows="4" class="required uk-width-1-1" name="enquiry" id="inputDetails" placeholder="Hello student, bla bla bla..."></textarea>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="uk-form-row uk-form-horizontal">
+                      <label class="uk-form-label" for="inputDetails"><i class="uk-icon-user"></i> Student</label>
+                      <div class="uk-form-controls uk-grid">
+                        <div class="uk-width-1-1">
+                          <textarea rows="4" class="required uk-width-1-1" name="enquiry" id="inputDetails" placeholder="Hello Landlord, bla bla bla..."></textarea>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="uk-form-row">
+                      <label class="uk-form-label" for="inputDetails"><i class="uk-icon-user"></i> Landlord</label>
+                      <div class="uk-form-controls uk-grid">
+                        <div class="uk-width-1-1">
+                          <textarea rows="4" class="required uk-width-1-1" name="enquiry" id="inputDetails" placeholder="Hello student, bla bla bla..."></textarea>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="uk-form-row">
+                      <label class="uk-form-label" for="inputDetails"><i class="uk-icon-warning"></i></span> Complaint from Student</label>
+                      <div class="uk-form-controls uk-grid">
+                        <div class="uk-width-1-1">
+                          <textarea rows="4" class="required uk-width-1-1" name="enquiry" id="inputDetails" placeholder="Hello Landlord, bla bla bla..."></textarea>
+                        </div>
+                      </div>
+                  </div>
+          
+                </fieldset>
+              </form>
+
+            </div>
+        </div>
+    
+
+</div>
+          </section>
+        </section>
+      </div>
+    </body>
+</html> 
