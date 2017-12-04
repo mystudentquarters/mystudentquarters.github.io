@@ -13,13 +13,13 @@
         <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.4/css/uikit.almost-flat.min.css" />
         <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.4/css/components/sticky.almost-flat.min.css"/>
         <link rel="stylesheet" type="text/css" href="https://getuikit.com/assets/uikit/dist/js/uikit-icons.js?nc=5319" />
-
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.4/css/components/notify.min.css"></link>
 
 		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.4/js/uikit.min.js"></script>
 		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.4/js/core/nav.min.js"></script>
-		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.4/css/components/notify.min.css"></script>
-
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.4/js/components/sticky.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.4/js/components/slideset.min.js"></script>
 
         <!-- import fonts -->
         <link href="https://fonts.googleapis.com/css?family=Just+Me+Again+Down+Here|Lato:300|Lato:700|Cookie|Source+Sans+Pro|Walter+Turncoat" rel="stylesheet">
@@ -113,18 +113,35 @@
         <!-- Settings for the title -->
         <h1 class="uk-text-center">THE FLAT</h1>
 
+        <!-- Settings for the Book Bar -->
+        <section class="uk-section-muted uk-text-center" data-uk-sticky>
+          <section class="uk-grid data-uk-grid-match" >
+            <div class="uk-width-1-1">
+                <div class="uk-panel uk-panel-box uk-panel-box-secondary uk-panel-header">
+                    <div class="uk-container uk-container-center uk-container-margin">
+                        <div class="uk-flex uk-flex-row uk-flex-space-between">
+                            <p><i class="uk-icon-calendar"></i> Available from September 1st, 2017</p>
+                            <p><i class="uk-icon-money"></i> $500 / month</p>
+                            <p><i class="uk-icon-bar-chart"></i> All Bills Included</p>
+                            <button class="uk-button uk-button-primary" type="button" data-uk-button>I'll Take It!</button>
+                        </div>    
+                    </div>
+                </div>
+            </div>
+          </section>
+        </section>
 
         <!-- Settings for the Section My next place -->
         <section class="uk-section-muted uk-text-center ">
           <section class="uk-grid data-uk-grid-match">
             <!-- Settings for the Main Left photo -->
-            <div class="uk-width-1-3">
+            <div class="uk-width-3-6">
                 <div class="uk-container uk-container-center uk-container-margin">
                     <div class="uk-thumbnail uk-thumbnail-expand"><img src="https://firebasestorage.googleapis.com/v0/b/my-student-quarters.appspot.com/o/MSQ_Jess_flat%2FMy-Students-Quarters-1.jpg?alt=media&token=ea2885ca-4b13-4e69-a6f2-168e1e9dc069" alt=""></div>
                 </div>
             </div>
             <!-- Settings for the Middle Section Photos -->
-            <div class="uk-width-1-3">
+            <div class="uk-width-1-6">
               <div class="uk-panel uk-panel-box uk-panel-box-secondary">
                 <div class="uk-container uk-container-center uk-container-margin">
                   <div class="uk-grid">
@@ -177,10 +194,8 @@
             </div>  
 
             <!-- Settings for the Section MAP -->
-            <div class="uk-width-1-3">
-                <div class="uk-container uk-container-center uk-container-margin">
-                    <div class="uk-thumbnail uk-thumbnail-expand"><img src="https://firebasestorage.googleapis.com/v0/b/my-student-quarters.appspot.com/o/MSQ%20Website%2Fmap_temple.png?alt=media&token=ab3fa92b-8b3d-496e-ae07-bae6013f101b" alt=""></div>
-                </div>
+            <div class="uk-width-2-6">
+              <div class="uk-thumbnail"><img src="https://firebasestorage.googleapis.com/v0/b/my-student-quarters.appspot.com/o/MSQ%20Website%2Fmap_temple.png?alt=media&token=ab3fa92b-8b3d-496e-ae07-bae6013f101b" alt=""></div>
             </div>
           </section>
          </section> 
@@ -204,23 +219,393 @@
           </section>
         </section>
 
-        <!-- Settings for the Book Bar -->
+        
+
+        <!-- Settings for the House Rules-->
         <section class="uk-section-muted uk-text-center ">
           <section class="uk-grid data-uk-grid-match">
             <div class="uk-width-1-1">
-                <div class="uk-panel uk-panel-box uk-panel-box-secondary uk-panel-header">
-                    <div class="uk-container uk-container-center uk-container-margin">
-                        <div class="uk-flex uk-flex-row uk-flex-space-between">
-                            <p>Available from September 1st, 2017</p>
-                            <p>$500 / month</p>
-                            <p>All Bills Included</p>
-                            <button class="uk-button uk-button-primary" type="button" data-uk-button>Check Availability</button>
-                        </div>    
-                    </div>
-                </div>
+              <div class="uk-panel uk-panel-box uk-panel-box-secondary uk-panel-header">
+                <h1 class="uk-panel-title uk-text-left">House Rules</h1>
+                <div>
+                  <i class="uk-icon-paw"> Pets</i>
+                  <i class="uk-icon-venus"> Female only</i>
+                  <i class="uk-icon-bell-slash-o"> Overnight Guests</i>
+                </div> 
+              </div>
             </div>
           </section>
         </section>
+
+        <!-- Settings for the Place Details-->
+        <section class="uk-section-muted uk-text-center ">
+          <section class="uk-grid data-uk-grid-match">
+            <div class="uk-width-1-1">
+              <div class="uk-panel uk-panel-box uk-panel-box-secondary uk-panel-header">
+                <h1 class="uk-panel-title uk-text-left">Place Details</h1>
+                <div class="uk-flex uk-flex-row">
+                  <div class="uk-panel uk-panel-space">
+                    <h1 class="uk-panel-title uk-text-left">This Place</h1>
+                    <p>If you want to impress all your friends with your awesome house, then this one is an obvious choice. Let's check it out!</p><p>This house features three bedrooms - one of them with an ensuite bathroom- and a shared bathroom on the top floor and a kitchen and a living room on the bottom one. It has a modern and fancy décor, and all of the spaces are quite comfortable. You'll also have access to the building's swimming pool, and you'll be close to the metro! If all of this sounds good, then don't waste any more time and go for it, and as always, enjoy your stay!</p>
+                  </div>
+                  <div class="uk-panel uk-panel-space">
+                    <h1 class="uk-panel-title uk-text-left">Verified</h1>
+                    <p>We trust this place 100%.</p><p>We have personally visited this place and it has earned the "Verified by MSQ" badge.</p>
+                  </div>
+                </div> 
+                
+                <!-- Settings for the slidiers on each appartment room -->
+                <!-- The controls are included in the Slideset -->
+                <div data-uk-slideset>
+                    <ul class="uk-flex uk-flex-row uk-flex-space-between">
+                        <li data-uk-filter="Apartment"><a>Apartment</a></li>
+                        <li data-uk-filter="Living-Room"><a>Living Room</a></li>
+                        <li data-uk-filter="Kitchen"><a>Kitchen</a></li>
+                        <li data-uk-filter="Bathroom"><a>Bathroom</a></li>
+                        <li data-uk-filter="Bedroom-1"><a>Bedroom 1</a></li>
+                        <li data-uk-filter="Bedroom-2"><a>Bedroom 2</a></li>
+                        <li data-uk-filter="Bedroom-3"><a>Bedroom 3</a></li>
+                    </ul>
+
+                    <ul class="uk-grid uk-slideset">
+                        <li data-uk-filter="Apartment">
+                          <div class="uk-width-1-1">
+                             <div class="uk-panel uk-panel-box uk-panel-box-secondary">
+                              <div>
+                                <i class="uk-icon-paw"> Pets</i>
+                                <i class="uk-icon-venus"> Female only</i>
+                                <i class="uk-icon-bell-slash-o"> Overnight Guests</i>
+                              </div> 
+                            </div>
+                          </div>
+                          <div class="uk-flex uk-flex-row">
+                            <img src="https://firebasestorage.googleapis.com/v0/b/my-student-quarters.appspot.com/o/MSQ_Jess_flat%2FMy-Students-Quarters-21.jpg?alt=media&token=31c7a40c-78f1-48eb-89e0-0d94b55691fa">
+                            <img src="https://firebasestorage.googleapis.com/v0/b/my-student-quarters.appspot.com/o/MSQ_Jess_flat%2FMy-Students-Quarters-22.jpg?alt=media&token=aeea1f73-ae14-40ff-933e-5ea96ba5ce94">
+                            <img src="https://firebasestorage.googleapis.com/v0/b/my-student-quarters.appspot.com/o/MSQ_Jess_flat%2FMy-Students-Quarters-23.jpg?alt=media&token=fa085ec2-02a8-4053-b1b0-766745133e7d">
+                            <img src="https://firebasestorage.googleapis.com/v0/b/my-student-quarters.appspot.com/o/MSQ_Jess_flat%2FMy-Students-Quarters-24.jpg?alt=media&token=497b6394-62d6-4efa-a864-af353cfd81e5">
+                          </div>
+                        </li>
+                        <li data-uk-filter="Living-Room">
+                          <div class="uk-width-1-1">
+                             <div class="uk-panel uk-panel-box uk-panel-box-secondary">
+                              <div>
+                                <i class="uk-icon-paw"> Pets</i>
+                                <i class="uk-icon-venus"> Female only</i>
+                                <i class="uk-icon-bell-slash-o"> Overnight Guests</i>
+                              </div> 
+                            </div>
+                          </div>
+                          <div class="uk-flex uk-flex-row">
+                            <img src="https://firebasestorage.googleapis.com/v0/b/my-student-quarters.appspot.com/o/MSQ_Jess_flat%2FMy-Students-Quarters-5.jpg?alt=media&token=025c56be-fdde-43ab-9b9c-7013666d1f5c">
+                            <img src="https://firebasestorage.googleapis.com/v0/b/my-student-quarters.appspot.com/o/MSQ_Jess_flat%2FMy-Students-Quarters-6.jpg?alt=media&token=d59583ee-e2ab-4b6e-a0e6-ec0179591416">
+                            <img src="https://firebasestorage.googleapis.com/v0/b/my-student-quarters.appspot.com/o/MSQ_Jess_flat%2FMy-Students-Quarters-7.jpg?alt=media&token=83042186-b4d3-401a-95b7-f4e51dff0f34">
+                            <img src="https://firebasestorage.googleapis.com/v0/b/my-student-quarters.appspot.com/o/MSQ_Jess_flat%2FMy-Students-Quarters-8.jpg?alt=media&token=22278b34-4773-4cc1-bccc-ae16b70522bb">
+                            <img src="https://firebasestorage.googleapis.com/v0/b/my-student-quarters.appspot.com/o/MSQ_Jess_flat%2FMy-Students-Quarters-9.jpg?alt=media&token=5631a152-875a-4499-86a7-35e7b3c42ab5">
+                            <img src="https://firebasestorage.googleapis.com/v0/b/my-student-quarters.appspot.com/o/MSQ_Jess_flat%2FMy-Students-Quarters-10.jpg?alt=media&token=d023f773-118a-44a8-bfb1-9030e3f11f6d">
+                          </div>
+                        </li>
+
+                        <li data-uk-filter="Kitchen">
+                          <div class="uk-width-1-1">
+                             <div class="uk-panel uk-panel-box uk-panel-box-secondary">
+                              <div>
+                                <i class="uk-icon-paw"> Pets</i>
+                                <i class="uk-icon-venus"> Female only</i>
+                                <i class="uk-icon-bell-slash-o"> Overnight Guests</i>
+                              </div> 
+                            </div>
+                          </div>
+                          <div class="uk-flex uk-flex-row">
+                          <img src="https://firebasestorage.googleapis.com/v0/b/my-student-quarters.appspot.com/o/MSQ_Jess_flat%2FMy-Students-Quarters-18.jpg?alt=media&token=3276c529-cf50-4288-a7c8-2358f50ee5a6">
+                          <img src="https://firebasestorage.googleapis.com/v0/b/my-student-quarters.appspot.com/o/MSQ_Jess_flat%2FMy-Students-Quarters-19.jpg?alt=media&token=08ec3cab-236b-4ff2-adaa-46acdf3df16e">
+                          <img src="https://firebasestorage.googleapis.com/v0/b/my-student-quarters.appspot.com/o/MSQ_Jess_flat%2FMy-Students-Quarters-20.jpg?alt=media&token=85376919-2003-4c51-9bbe-d7bf695f6ca9">
+                        </div>
+                        </li>
+                        <li data-uk-filter="Bathroom">
+                          <div class="uk-width-1-1">
+                             <div class="uk-panel uk-panel-box uk-panel-box-secondary">
+                              <div>
+                                <i class="uk-icon-paw"> Pets</i>
+                                <i class="uk-icon-venus"> Female only</i>
+                                <i class="uk-icon-bell-slash-o"> Overnight Guests</i>
+                              </div> 
+                            </div>
+                          </div>
+                          <div class="uk-flex uk-flex-row">
+                           <img src="https://firebasestorage.googleapis.com/v0/b/my-student-quarters.appspot.com/o/MSQ_Jess_flat%2FMy-Students-Quarters-11.jpg?alt=media&token=d4d5f8df-b555-4caf-8ebc-4786bb5703eb">
+                           <img src="https://firebasestorage.googleapis.com/v0/b/my-student-quarters.appspot.com/o/MSQ_Jess_flat%2FMy-Students-Quarters-17.jpg?alt=media&token=cfe9e143-2521-4697-a19e-0e4431c531b9">
+                         </div>
+                        </li>
+                        <li data-uk-filter="Bedroom-1">
+                          <div class="uk-width-1-1">
+                             <div class="uk-panel uk-panel-box uk-panel-box-secondary">
+                              <div>
+                                <i class="uk-icon-paw"> Pets</i>
+                                <i class="uk-icon-venus"> Female only</i>
+                                <i class="uk-icon-bell-slash-o"> Overnight Guests</i>
+                              </div> 
+                            </div>
+                          </div>
+                          <div class="uk-flex uk-flex-row">
+                          <img src="https://firebasestorage.googleapis.com/v0/b/my-student-quarters.appspot.com/o/MSQ_Jess_flat%2FMy-Students-Quarters-1.jpg?alt=media&token=ea2885ca-4b13-4e69-a6f2-168e1e9dc069">
+                          <img src="https://firebasestorage.googleapis.com/v0/b/my-student-quarters.appspot.com/o/MSQ_Jess_flat%2FMy-Students-Quarters-2.jpg?alt=media&token=d6c76d51-f856-4e74-bf00-80fe05527c85">
+                          <img src="https://firebasestorage.googleapis.com/v0/b/my-student-quarters.appspot.com/o/MSQ_Jess_flat%2FMy-Students-Quarters-3.jpg?alt=media&token=77488aca-bc47-4915-9f31-1b759f19115d">
+                          <img src="https://firebasestorage.googleapis.com/v0/b/my-student-quarters.appspot.com/o/MSQ_Jess_flat%2FMy-Students-Quarters-4.jpg?alt=media&token=0fd42a9a-aad1-472d-8cab-658d5a04324d">
+                        </div>
+                        </li>
+                        <li data-uk-filter="Bedroom-2">
+                          <div class="uk-width-1-1">
+                             <div class="uk-panel uk-panel-box uk-panel-box-secondary">
+                              <div>
+                                <i class="uk-icon-paw"> Pets</i>
+                                <i class="uk-icon-venus"> Female only</i>
+                                <i class="uk-icon-bell-slash-o"> Overnight Guests</i>
+                              </div> 
+                            </div>
+                          </div>
+                          <div class="uk-flex uk-flex-row">
+                          <img src="https://firebasestorage.googleapis.com/v0/b/my-student-quarters.appspot.com/o/MSQ_Jess_flat%2FMy-Students-Quarters-12.jpg?alt=media&token=8012f77d-87b5-4308-b5b8-16431a3391d4">
+                          <img src="https://firebasestorage.googleapis.com/v0/b/my-student-quarters.appspot.com/o/MSQ_Jess_flat%2FMy-Students-Quarters-13.jpg?alt=media&token=ea8b812f-5dbf-4449-a96a-0776e1628f96">
+                        </div>
+                        </li>
+                        <li data-uk-filter="Bedroom-3">
+                          <div class="uk-width-1-1">
+                             <div class="uk-panel uk-panel-box uk-panel-box-secondary">
+                              <div>
+                                <i class="uk-icon-paw"> Pets</i>
+                                <i class="uk-icon-venus"> Female only</i>
+                                <i class="uk-icon-bell-slash-o"> Overnight Guests</i>
+                              </div> 
+                            </div>
+                          </div>
+                          <div class="uk-flex uk-flex-row">
+                          <img src="https://firebasestorage.googleapis.com/v0/b/my-student-quarters.appspot.com/o/MSQ_Jess_flat%2FMy-Students-Quarters-14.jpg?alt=media&token=2b4f1ca8-00a8-489b-8956-0706f9c67b90">
+                          <img src="https://firebasestorage.googleapis.com/v0/b/my-student-quarters.appspot.com/o/MSQ_Jess_flat%2FMy-Students-Quarters-16.jpg?alt=media&token=6d8e5cd1-514e-4f72-9ca3-7bed1e4f9af6">
+                        </div>
+                        </li>
+                    </ul>
+                </div>
+
+              </div>
+            </div>
+          </section>
+        </section>
+
+        <!-- Settings for the Rental Conditions-->
+        <section class="uk-section-muted uk-text-center ">
+          <section class="uk-grid data-uk-grid-match">
+            <div class="uk-width-1-1">
+              <div class="uk-panel uk-panel-box uk-panel-box-secondary uk-panel-header">
+                <h1 class="uk-panel-title uk-text-left">Rental Conditions</h1>
+                <div>
+                  <i class="uk-icon-edit"> Contract Fortnightly</i>
+                  <i class="uk-icon-lightbulb-o"> Bills included</i>
+                  <i class="uk-icon-chain-broken"> Cancellation Policy - Moderate</i>
+                  <i class="uk-icon-calendar"> Minimum stay - 3 months</i>
+                </div> 
+                <div>
+                  <i class="uk-icon-lock"> Security Deposit - Equal to 1st rent</i>
+                  <i class="uk-icon-money"> Admin fee</i>
+                  <i class="uk-icon-fire-extinguisher"> Cleaning - not included</i>
+                  <i class="uk-icon-asterisk"> Snow Removal - not included</i>
+                </div> 
+              </div>
+            </div>
+          </section>
+        </section>
+
+        <!-- Settings for the Reviews-->
+        <section class="uk-section-muted uk-text-center ">
+          <section class="uk-grid data-uk-grid-match">
+            <div class="uk-width-1-1">
+              <div class="uk-panel uk-panel-box uk-panel-box-secondary uk-panel-header">
+                <h1 class="uk-panel-title uk-text-left">Reviews</h1>
+                <div>
+                  <form method="post" action="" class="uk-form uk-form-stacked uk-form-horizontal">
+                <fieldset>
+                  <div class="uk-form-row">
+                      <label class="uk-form-label" for="inputDetails"><i class="uk-icon-user"></i> Student 1</label>
+                      <div class="uk-form-controls uk-grid">
+                        <div class="uk-width-1-1">
+                          <textarea rows="4" class="required uk-width-1-1" name="enquiry" id="inputDetails" placeholder="Great place!, bla bla bla..."></textarea>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="uk-form-row uk-form-horizontal">
+                      <label class="uk-form-label" for="inputDetails"><i class="uk-icon-user"></i> Student 2</label>
+                      <div class="uk-form-controls uk-grid">
+                        <div class="uk-width-1-1">
+                          <textarea rows="4" class="required uk-width-1-1" name="enquiry" id="inputDetails" placeholder="Nice apartment, bla bla bla..."></textarea>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="uk-form-row">
+                      <label class="uk-form-label" for="inputDetails"><i class="uk-icon-user"></i> Student 3</label>
+                      <div class="uk-form-controls uk-grid">
+                        <div class="uk-width-1-1">
+                          <textarea rows="4" class="required uk-width-1-1" name="enquiry" id="inputDetails" placeholder="Beautiful neighbourhood, bla bla bla..."></textarea>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="uk-form-row">
+                      <label class="uk-form-label" for="inputDetails"><i class="uk-icon-user"></i> Student 4</label>
+                      <div class="uk-form-controls uk-grid">
+                        <div class="uk-width-1-1">
+                          <textarea rows="4" class="required uk-width-1-1" name="enquiry" id="inputDetails" placeholder="I liked it, bla bla bla..."></textarea>
+                        </div>
+                      </div>
+                  </div>
+          
+                </fieldset>
+              </form>
+                </div> 
+              </div>
+            </div>
+          </section>
+        </section>
+
+        <!-- Settings for the Neighbourhood-->
+        <section class="uk-section-muted uk-text-center ">
+          <section class="uk-grid data-uk-grid-match">
+            <div class="uk-width-1-1">
+              <div class="uk-panel uk-panel-box uk-panel-box-secondary uk-panel-header">
+                <h1 class="uk-panel-title uk-text-left">Neighbourhood</h1>
+                <div class="uk-flex uk-flex-row">
+                  <div class="uk-panel uk-panel-space">
+                    <h1 class="uk-panel-title uk-text-left">The Neighbours</h1>
+                    <p>Middle and upper-class families.</p>
+                  </div>
+                  <div class="uk-panel uk-panel-space">
+                    <h1 class="uk-panel-title uk-text-left">You'll fall in love with</h1>
+                    <p>With the beautiful buildings.</p>
+                  </div>
+                </div>
+                <div class="uk-flex uk-flex-row">
+                  <div class="uk-panel uk-panel-space">
+                    <h1 class="uk-panel-title uk-text-left">Interesting spots</h1>
+                    <p>The neighbourhood's park.</p>
+                  </div>
+                  <div class="uk-panel uk-panel-space">
+                    <h1 class="uk-panel-title uk-text-left">The lifestyle</h1>
+                    <p>Quiet and very friendly neighbourhood.</p>
+                  </div>
+                </div> 
+              </div>
+            </div>
+          </section>
+        </section>
+
+        <!-- Settings for the Other places that suit you-->
+        <section class="uk-section-muted uk-text-center ">
+          <section class="uk-grid data-uk-grid-match">
+            <div class="uk-width-1-1">
+              <div class="uk-panel uk-panel-box uk-panel-box-secondary uk-panel-header">
+                <h1 class="uk-panel-title uk-text-left">Other places that suit you</h1>
+                <div class="uk-width-1-1">
+              
+                      <div class="uk-grid featured-hover" data-uk-grid-margin>
+                        <div class="uk-width-1-4">
+                          <div class="featured-apartment">
+                            <div class="featured-header uk-nbfc">
+                                <p class="uk-float-left">
+                              <i class="uk-icon-heart"></i> </p>
+                              <p class="uk-float-right">
+                              <i class="uk-icon-star"></i> <i class="uk-icon-star"></i> <i class="uk-icon-star"></i> <i class="uk-icon-star-o"></i> <i class="uk-icon-star-o"></i> 5 reviews </p>
+                            </div>
+                            <div class="featured-image">
+                              <a href="/Dashboards_Test_1/Search/MSQ_the_place" title="Borough Empire Apartments" class="lazyparent">
+                                <img src="https://firebasestorage.googleapis.com/v0/b/my-student-quarters.appspot.com/o/MSQ_Jess_flat%2FMy-Students-Quarters-1.jpg?alt=media&token=ea2885ca-4b13-4e69-a6f2-168e1e9dc069" height="138" />
+                              </a>
+                            </div>
+                            <div class="featured-info">
+                              <h3 class="uk-text-center">
+                                <a href="/Dashboards_Test_1/Search/MSQ_the_place" title="Explore this apartment">Borough Empire Apartments</a>
+                              </h3>
+
+                              <p class="featured-rates aqua uk-text-center"><span class="currency" data-code="GBP">$ 120.00</span></p>
+
+                              <a href="/Dashboards_Test_1/Search/MSQ_the_place" title="Explore this apartment" class="uk-button uk-button-large uk-width-1-1 crimson-bg featured-book">View Place</a>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="uk-width-1-4">
+                          <div class="featured-apartment">
+                            <div class="featured-header uk-nbfc">
+                                <p class="uk-float-left">
+                              <i class="uk-icon-heart-o"></i> </p>
+                              <p class="uk-float-right">
+                              <i class="uk-icon-star"></i> <i class="uk-icon-star"></i> <i class="uk-icon-star"></i> <i class="uk-icon-star"></i> <i class="uk-icon-star-o"></i> 10 reviews</p>
+                            </div>
+                            <div class="featured-image">
+                              <a href="/Dashboards_Test_1/Search/MSQ_the_place" title="Fraser Suites Queens Gate" class="lazyparent">
+                                <img src="https://firebasestorage.googleapis.com/v0/b/my-student-quarters.appspot.com/o/MSQ_Jess_flat%2FMy-Students-Quarters-10.jpg?alt=media&token=d023f773-118a-44a8-bfb1-9030e3f11f6d" height="138" />
+                              </a>
+                            </div>
+                            <div class="featured-info">
+                              <h3 class="uk-text-center">
+                                <a href="/Dashboards_Test_1/Search/MSQ_the_place" title="Explore this apartment">Fraser Suites Queens Gate</a>
+                              </h3>
+                              <p class="featured-rates aqua uk-text-center"><span class="currency" data-code="USD">$ 145.80</span></p>
+                              <a href="/Dashboards_Test_1/Search/MSQ_the_place" title="Explore this apartment" class="uk-button uk-button-large uk-width-1-1 crimson-bg featured-book">View Place</a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="uk-width-1-4">
+                          <div class="featured-apartment">
+                            <div class="featured-header uk-nbfc">
+                              <p class="uk-float-left">
+                              <i class="uk-icon-heart"></i> </p>
+                              <p class="uk-float-right"> 2 reviews
+                              <i class="uk-icon-star"></i> <i class="uk-icon-star"></i> <i class="uk-icon-star"></i> <i class="uk-icon-star-o"></i> <i class="uk-icon-star-o"></i> </p>
+                            </div>
+                            <div class="featured-image">
+                              <a href="/Dashboards_Test_1/Search/MSQ_the_place" title="City Docks Apartments" class="lazyparent">
+                                <img src="https://firebasestorage.googleapis.com/v0/b/my-student-quarters.appspot.com/o/MSQ_Jess_flat%2FMy-Students-Quarters-11.jpg?alt=media&token=d4d5f8df-b555-4caf-8ebc-4786bb5703eb" height="138" />
+                              </a>
+                            </div>
+                            <div class="featured-info">
+                              <h3 class="uk-text-center">
+                                <a href="/Dashboards_Test_1/Search/MSQ_the_place" title="Explore this apartment">City Docks Apartments</a>
+                              </h3>
+                              <p class="featured-rates aqua uk-text-center"><span class="currency" data-code="GBP">$ 142.00</span></p>
+                              <a href="/Dashboards_Test_1/Search/MSQ_the_place" title="Explore this apartment" class="uk-button uk-button-large uk-width-1-1 crimson-bg featured-book">View Place</a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="uk-width-1-4">
+                          <div class="featured-apartment">
+                            <div class="featured-header uk-nbfc">
+                              <p class="uk-float-left">
+                              <i class="uk-icon-heart"></i> </p>
+                              <p class="uk-float-right"> 2 reviews
+                              <i class="uk-icon-star"></i> <i class="uk-icon-star"></i> <i class="uk-icon-star"></i> <i class="uk-icon-star-o"></i> <i class="uk-icon-star-o"></i> </p>
+                            </div>
+                            <div class="featured-image">
+                              <a href="/Dashboards_Test_1/Search/MSQ_the_place" title="Limehouse 2B Apartments" class="lazyparent">
+                              <img src="https://firebasestorage.googleapis.com/v0/b/my-student-quarters.appspot.com/o/MSQ_Jess_flat%2FMy-Students-Quarters-12.jpg?alt=media&token=8012f77d-87b5-4308-b5b8-16431a3391d4" height="138" />
+                              </a>
+                            </div>
+                            <div class="featured-info">
+                              <h3 class="uk-text-center">
+                              <a href="/Dashboards_Test_1/Search/MSQ_the_place" title="Explore this apartment">Limehouse 2B Apartments</a>
+                              </h3>
+                              <p class="featured-rates aqua uk-text-center"><span class="currency" data-code="GBP"> $142.00</span></p>
+                              <a href="/Dashboards_Test_1/Search/MSQ_the_place" title="Explore this apartment" class="uk-button uk-button-large uk-width-1-1 crimson-bg featured-book">View Place</a>
+                            </div>
+                          </div>
+                        </div>        
+                      </div>
+                    </div>
+                   </div>  
+              </div>
+            </div>
+          </section>
+        </section>
+
+        <div class="uk-text-center">
+        <button class="uk-button uk-button-primary" type="button" data-uk-button href="/Dashboards_Test_1/Search/MSQ_find_a_place">Go back to Search</button>
+      </div>
 
         </div>
     </body>
