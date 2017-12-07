@@ -12,7 +12,7 @@
         <!--<link rel="stylesheet" href="css/style.css"/> -->
         <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.4/css/uikit.almost-flat.min.css" />
         <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.4/css/components/sticky.almost-flat.min.css"/>
-        <link rel="stylesheet" type="text/css" href="https://getuikit.com/assets/uikit/dist/js/uikit-icons.js?nc=5319" />
+        <link rel="stylesheet" type="text/css" href="https://getuikit.com/assets/uikit/dist/js/uikit-icons.js?nc=5319"/>
 
 
 		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -59,47 +59,12 @@
       <a class="uk-logo" href="/Dashboards_Test_1/MSQ_dashboard_unecom">
     <img src="https://firebasestorage.googleapis.com/v0/b/my-student-quarters.appspot.com/o/MSQ%20Logos%2FLogo2_citrus_960x960.svg?alt=media&token=cdc6511e-df1c-4408-bc2b-1a1cb7c60425" width="64px" alt=""> My Student Quarters</a>
       </div>
-      <ul class="uk-navbar-nav uk-margin-large-left uk-hidden-medium uk-hidden-small">
-        <li class="uk-parent" data-uk-dropdown>
-          <a href=""><i class="uk-icon-bars"></i> Find a...</a>
-          <div class="uk-dropdown uk-dropdown-navbar">
-            <div id="browse" class="uk-grid uk-dropdown-grid">
-              <div ><a href="/Dashboards_Test_1/Search/MSQ_find_a_place"><i class="uk-icon-home"></i> Find a Place</a></div>
-              <div ><a href="/Dashboards_Test_1/Search/MSQ_find_a_roomate"><i class="uk-icon-users"></i> Find a Roomate</a></div>
-            </div>
-          </div>
-        </li>
-      </ul>
+      
       <div class="uk-navbar-flip uk-hidden-small">
         <ul class="uk-navbar-nav">
-          <li class="uk-parent" data-uk-dropdown>
-          <a href=""><i class="uk-icon-bars"></i> Student Menu</a>
-          <div class="uk-dropdown uk-dropdown-navbar">
-                <div ><a href="/Dashboards_Test_1/Student/MSQ_student_dashoard"><i class="uk-icon-bank"></i> Dashboard</a></div>
-                <div ><a href="/Dashboards_Test_1/Student/MSQ_student_profile"><i class="uk-icon-user"></i> Profile</a></div>
-                <div ><a href="/Dashboards_Test_1/Student/MSQ_student_payments"><i class="uk-icon-credit-card"></i> Payments</a></div>
-                <div ><a href="/Dashboards_Test_1/Student/MSQ_student_messages"><i class="uk-icon-commenting"></i> Messages</a></div>
-                <div ><a href="/Dashboards_Test_1/Student/MSQ_student_current_place"><i class="uk-icon-home"></i> My Place</a></div>
-                <div ><a href="/Dashboards_Test_1/Student/MSQ_student_utilities"><i class="uk-icon-bolt"></i> Utilities</a></div>
-                <div ><a href="/Dashboards_Test_1/Student/MSQ_student_lease"><i class="uk-icon-legal"></i> Lease</a></div>
-                <div ><a href="/Dashboards_Test_1/Student/MSQ_student_help"><i class="uk-icon-question"></i> Help</a></div>
-          </div>
-
-        </li>
-        <li class="uk-parent" data-uk-dropdown>
-          <a href=""><i class="uk-icon-bars"></i> Landlord Menu</a>
-          <div class="uk-dropdown uk-dropdown-navbar">
-                <div ><a href="/Dashboards_Test_1/Landlord/MSQ_landlord_dashoard"><i class="uk-icon-bank"></i> Dashboard</a></div>
-                <div ><a href="/Dashboards_Test_1/Landlord/MSQ_landlord_collections"><i class="uk-icon-clipboard"></i> Collections</a></div>
-                <div ><a href="/Dashboards_Test_1/Landlord/MSQ_landlord_leads"><i class="uk-icon-credit-users"></i> Leads</a></div>
-                <div ><a href="/Dashboards_Test_1/Landlord/MSQ_landlord_rentals"><i class="uk-icon-home"></i> Rentals</a></div>
-                <div ><a href="/Dashboards_Test_1/Landlord/MSQ_landlord_agreements"><i class="uk-icon-file-o"></i> Agreements</a></div>
-                <div ><a href="/Dashboards_Test_1/Landlord/MSQ_landlord_messages"><i class="uk-icon-commenting"></i> Messages</a></div>
-                <div ><a href="/Dashboards_Test_1/Landlord/MSQ_landlord_help"><i class="uk-icon-question"></i> Help</a></div>
-          </div>
           
-        </li>
-        <li class="uk-margin-left"><a class="link-secondary" href="">Login</a></li>
+        <!-- This is an anchor toggling the modal of Login-->
+        <li class="uk-margin-left"><a class="link-secondary" href="#modal_login" data-uk-modal="{target:'#modal_login'}">Login</a></li>
         <li><a class="link-secondary" href="">Sign up</a>
         </li>
         </ul>
@@ -109,6 +74,31 @@
 </nav>
 <!-- End Navbar -->
 
+
+<!-- This is the modal of Login -->
+<div id="modal_login" class="uk-modal">
+    <div class="uk-modal-dialog">
+        <a class="uk-modal-close uk-close"></a>
+        <div class="login-page">
+          <div class="uk-form">
+            <!-- <form class="register-form">
+              <input type="text" placeholder="name"/>
+              <input type="password" placeholder="password"/>
+              <input type="text" placeholder="email address"/>
+              <button>create</button>
+              <p class="message">Already registered? <a href="#">Sign In</a></p>
+            </form>-->
+            <form class="login-form">
+              <input type="text" placeholder="username"/>
+              <input type="password" placeholder="password"/>
+              <button class="uk-button uk-button-primary" type="button" href="/Dashboards_Test_1/Student/MSQ_student_profile" data-uk-button>Login as Student</button>
+              <button class="uk-button uk-button-primary" type="button" href="/Dashboards_Test_1/Landlord/MSQ_landlord_dashoard" data-uk-button>Login as Landlord</button>
+              <p class="message">Not registered? <a href="">Create an account</a></p>
+            </form>
+          </div>
+        </div>
+            </div>
+</div>
 
 			
         
@@ -133,6 +123,7 @@
                 <a href="/Dashboards_Test_1/Search/MSQ_find_a_place">
     			<i class="uk-icon-home uk-icon-large"></i>
     			<h1 class="uk-panel-title" href="/Dashboards_Test_1/Search/MSQ_find_a_place">Find a Place</h1></a>
+          <p>Choose the best room to spend the next months</p>
 				</div>
 		      </div>
 		    <div class="uk-width-1-3">
@@ -140,14 +131,41 @@
                 <a href="/Dashboards_Test_1/Search/MSQ_find_a_roomate">
     			<i class="uk-icon-users uk-icon-large"></i>
     			<h1 class="uk-panel-title">Find a Roommate</h1></a>
+          <p>You have a great place, why wont you share it with great roomates too?</p>
     			</div>
 		    </div>
 		    <div class="uk-width-1-3">
 		      <div class="uk-panel uk-panel-hover">
+            <a href="">
     			<i class="uk-icon-question-circle uk-icon-large"></i>
-    			<h1 class="uk-panel-title">Housing FAQ</h1>
+    			<h1 class="uk-panel-title">Housing FAQ</h1></a>
+          <p>Should the landlord pay to fix the pipes? Find here all the responses</p>
 		      </div>
 		    </div>
+        <div class="uk-width-1-3">
+          <div class="uk-panel uk-panel-hover">
+                <a href="">
+          <i class="uk-icon-truck uk-icon-large"></i>
+          <h1 class="uk-panel-title" href="">Find a professional</h1></a>
+          <p>Need to hire urgently a pet walker? Need to receive a personal class for tomorrow's exam? Find out here who is available</p>
+        </div>
+          </div>
+        <div class="uk-width-1-3">
+          <div class="uk-panel uk-panel-hover">
+                <a href="">
+          <i class="uk-icon-shopping-basket uk-icon-large"></i>
+          <h1 class="uk-panel-title">Find a local store</h1></a>
+          <p>Do you want to know the best place to make photocopies? Find out here the stores our locals love</p>
+          </div>
+        </div>
+        <div class="uk-width-1-3">
+          <div class="uk-panel uk-panel-hover">
+            <a href="">
+          <i class="uk-icon-comments uk-icon-large"></i>
+          <h1 class="uk-panel-title">Unecom MSQ community</h1></a>
+          <p>groups for studying, exploring the city, making new friends</p>
+          </div>
+        </div>
 		  </section>
 		</section>
     	</div>
